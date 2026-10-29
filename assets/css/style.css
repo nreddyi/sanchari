@@ -2192,3 +2192,19 @@ header.site nav.main a.active{font-weight:500}
 @media (max-width:860px){.nl-in{grid-template-columns:1fr;gap:22px;padding-block:40px}}
 @media (max-width:480px){.nl-copy{align-items:flex-start}.nl-ico{width:46px;height:46px;border-radius:12px}.nl-form{grid-template-columns:1fr}.nl-form .btn{width:100%;justify-content:center}}
 .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ---------- policy pages ---------- */
+.legal{display:grid;grid-template-columns:260px minmax(0,1fr);gap:56px;align-items:start}
+.legal-side{position:sticky;top:112px;display:grid;gap:10px;padding:22px;border:1px solid var(--line);border-radius:14px;background:#fff;font-size:14px}
+.legal-side b{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.legal-side ol,.legal-side ul{margin:0 0 10px;padding-left:18px;display:grid;gap:6px}
+.legal-side a{color:var(--ink)}
+.legal-side a:hover{color:var(--gold)}
+.legal-body{max-width:720px;min-width:0}
+.legal-body section{scroll-margin-top:110px;padding-bottom:26px;margin-bottom:26px;border-bottom:1px solid var(--line)}
+.legal-body section:last-child{border-bottom:0}
+.legal-body h2{font-size:clamp(20px,2vw,24px);color:var(--navy);margin:0 0 12px}
+.legal-body p{color:var(--ink);line-height:1.75;margin:0 0 10px}
+.legal-body a{color:var(--gold);font-weight:600}
+.legal-upd{font-size:13px;color:var(--muted)!important;margin-bottom:22px!important}
+@media (max-width:900px){.legal{grid-template-columns:1fr;gap:28px}.legal-side{position:static}}
