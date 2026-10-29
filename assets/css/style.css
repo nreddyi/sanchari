@@ -2242,3 +2242,25 @@ header.site nav.main a.active{font-weight:500}
 body.mnav-open .wa{opacity:0;pointer-events:none;transform:scale(.8)}
 .wa{transition:opacity .2s,transform .2s}
 body.mnav-open::after{content:"";position:fixed;inset:0;background:rgba(30,10,4,.35);z-index:48}
+/* blog post meta: no dangling separators when it wraps on phones */
+@media (max-width:760px){
+  .bp-top .b-meta{gap:4px 10px}
+  .bp-top .b-meta > span:nth-child(even){display:none}
+  .bp-top .b-meta > span:nth-child(odd):not(:first-child)::before{content:"·";margin-right:10px;color:var(--muted)}
+}
+/* very small phones */
+.pay{flex-wrap:wrap}
+@media (max-width:340px){.topbar svg{display:none}.topbar .l{gap:8px}}
+/* tour facts strip + wellness note on small phones */
+.facts>div{min-width:0}
+.facts>div>*{min-width:0;overflow-wrap:anywhere}
+@media (max-width:360px){.facts{grid-template-columns:1fr}.facts>div{padding:14px 16px}}
+.grid-note,.card{min-width:0}
+.grid-note *{overflow-wrap:anywhere}
+.d-layout>*{min-width:0}.d-content{overflow-wrap:anywhere}
+@media (max-width:760px){
+  .bp-top .b-meta > span:nth-child(odd):not(:first-child)::before{content:none}
+  .bp-top .b-meta > span:first-child{flex-basis:100%}
+  .bp-top .b-meta > span:nth-child(2){display:none}
+  .bp-top .b-meta > span:nth-child(4){display:inline}
+}
