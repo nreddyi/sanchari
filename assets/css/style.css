@@ -2224,3 +2224,10 @@ header.site nav.main a.active{font-weight:500}
 .bp-body .prose ul{margin:4px 0 26px;gap:12px}
 .bp-body .article-cta{margin-top:56px}
 @media (max-width:760px){.bp-top{padding:24px 0 28px}.bp-top .d-crumbs{margin-bottom:20px}.bp-body{padding-bottom:64px;background:linear-gradient(var(--bg) 0,var(--bg) 110px,#fff 110px)}.bp-body .article-img{margin-bottom:32px;aspect-ratio:16/10}.bp-body .prose > :first-child{font-size:17px}.bp-body .prose h2{margin-top:34px}}
+/* mobile top bar: phone left, email right */
+@media (max-width:860px){
+  .topbar .l{flex:1;justify-content:space-between;gap:12px;min-width:0}
+  .topbar .l a:nth-child(2){display:inline-flex;align-items:center}
+  .topbar .l a{white-space:nowrap}
+}
+@media (max-width:360px){.topbar{font-size:12px}.topbar svg{margin-right:4px}}
