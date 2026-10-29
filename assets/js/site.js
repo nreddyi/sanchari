@@ -655,6 +655,8 @@ document.querySelectorAll('[data-slider]').forEach(sl => {
       if(title) title.textContent = title.getAttribute(gen ? 'data-gen' : 'data-trip');
     }
     radios.forEach(function(r){ r.addEventListener('change', sync); });
+    var want = new URLSearchParams(location.search).get('type');
+    if(want){ var r0 = f.querySelector('input[name="pjType"][value="'+want.replace(/[^a-z]/g,'')+'"]'); if(r0) r0.checked = true; }
     sync();
   });
 })();

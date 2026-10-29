@@ -2164,3 +2164,9 @@ header.site nav.main a.active{font-weight:500}
 .cs-pp[aria-pressed="true"] .ic-play{display:block;margin-left:2px}
 .cs-pp:focus-visible{outline:3px solid #ffd9bf;outline-offset:3px}
 .cs-pp.is-off{display:none}
+/* hero slider: secondary button */
+.hv-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.hv-btn-2{background:transparent;border-color:#fff;color:#fff}
+.hv-btn-2:hover{background:#fff;border-color:#fff;color:var(--gold)}
+.hv-slide.on .hv-btn-2{animation-delay:.32s}
+@media (max-width:540px){.hv-ctas{gap:10px}}
