@@ -2208,3 +2208,4 @@ header.site nav.main a.active{font-weight:500}
 .legal-body a{color:var(--gold);font-weight:600}
 .legal-upd{font-size:13px;color:var(--muted)!important;margin-bottom:22px!important}
 @media (max-width:900px){.legal{grid-template-columns:1fr;gap:28px}.legal-side{position:static}}
+.article{max-width:980px}
