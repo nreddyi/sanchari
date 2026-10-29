@@ -2264,3 +2264,4 @@ body.mnav-open::after{content:"";position:fixed;inset:0;background:rgba(30,10,4,
   .bp-top .b-meta > span:nth-child(2){display:none}
   .bp-top .b-meta > span:nth-child(4){display:inline}
 }
+.bp-top h1{max-width:none;text-wrap:wrap}
