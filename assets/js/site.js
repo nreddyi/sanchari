@@ -689,3 +689,17 @@ document.querySelectorAll('[data-slider]').forEach(sl => {
     }
   });
 })();
+
+/* Newsletter signup (front-end only for now: validates and confirms; connect a mailing service to store emails) */
+(function(){
+  var f = document.getElementById('nlForm'); if(!f) return;
+  var inp = document.getElementById('nlEmail'), msg = document.getElementById('nlMsg');
+  inp.addEventListener('input', function(){ f.classList.remove('is-err'); msg.textContent=''; msg.className='nl-msg'; });
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = (inp.value || '').trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){ f.classList.add('is-err'); msg.className='nl-msg err'; msg.textContent='Please enter a valid email address, e.g. name@example.com.'; inp.focus(); return; }
+    msg.className='nl-msg ok'; msg.textContent='Thank you! ' + v + ' is subscribed to Sanchari travel updates.';
+    inp.value='';
+  });
+})();
