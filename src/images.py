@@ -103,7 +103,23 @@ def svg_for(key):
     return KINDS[kind](w, h, c1, c2, label)
 
 
+import os as _os, json as _json
+_PMAP_FILE = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "content", "photos.json")
+_ROOT = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+def local_photo(url):
+    """Local copy of a downloaded photo (assets/photos/...), or the URL itself if not downloaded."""
+    if _os.environ.get("SANCHARI_NO_PHOTOS") or not url: return url
+    global _PMAP
+    try: _PMAP
+    except NameError:
+        _PMAP = _json.load(open(_PMAP_FILE)) if _os.path.exists(_PMAP_FILE) else {}
+    p = _PMAP.get(url)
+    return p if p and _os.path.exists(_os.path.join(_ROOT, p)) else url
+
 def real_url(key):
+    return local_photo(_real_url(key))
+
+def _real_url(key):
     r = REG[key][2]
     if not r: return ""
     if r.startswith("http"): return r

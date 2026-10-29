@@ -969,7 +969,8 @@ def temple_showcase(temples):
 # or set a YouTube link here (e.g. "https://www.youtube.com/watch?v=XXXX").
 CUSTOM_VIDEO = "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/59/Ganga_Aarti_at_Rishikesh.webm/Ganga_Aarti_at_Rishikesh.webm.1080p.vp9.webm"
 CUSTOM_VIDEO_SD = "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/59/Ganga_Aarti_at_Rishikesh.webm/Ganga_Aarti_at_Rishikesh.webm.480p.vp9.webm"
-CUSTOM_VIDEO_POSTER = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ganga_Aarti_at_Rishikesh.webm/960px--Ganga_Aarti_at_Rishikesh.webm.jpg"
+from build_consts import CUSTOM_VIDEO_POSTER as _CVP
+CUSTOM_VIDEO_POSTER = IM.local_photo(_CVP)
 
 def custom_section():
     steps = [("chat", "Share your idea", "Tell us where, when and who’s travelling."),
@@ -1694,6 +1695,8 @@ shutil.copy(os.path.join(HERE, "site.js"), os.path.join(OUT, "assets/js/site.js"
 for f in ["logo.png", "logo-white.png", "favicon.png", "apple-touch-icon.png"]: shutil.copy(os.path.join(HERE, f), os.path.join(OUT, "assets/img", f))
 if os.path.isdir(os.path.join(HERE, "video")): shutil.copytree(os.path.join(HERE, "video"), os.path.join(OUT, "assets/video"))
 for k in IM.REG: open(os.path.join(OUT, f"assets/img/{k}.svg"), "w").write(IM.svg_for(k))
+_ph = os.path.join(os.path.dirname(HERE), "assets", "photos")
+if os.path.isdir(_ph): shutil.copytree(_ph, os.path.join(OUT, "assets/photos"))
 home(); about(); contact(); blog(); credits(); invoice(); account(); legal_pages()
 for c in CATS: category_page(c)
 for t in TOURS: tour_page(t)

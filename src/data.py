@@ -963,7 +963,7 @@ import images as _IM
 _CDIR = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), "..", "content", "tours")
 _real2key = {}
 for _k in list(_IM.REG):
-    _u = _IM.real_url(_k)
+    _u = _IM._real_url(_k)
     if _u: _real2key.setdefault(_u, _k)
 
 def _img_key(slug, n, item, cat):
