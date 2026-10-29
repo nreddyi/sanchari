@@ -35,8 +35,22 @@ window.SAN = (function () {
   // Mobile nav
   const mBtn = $('.menu-btn'), mNav = $('#mnav');
   if (mBtn && mNav) {
-    mBtn.addEventListener('click', () => mNav.classList.toggle('open'));
-    $$('a', mNav).forEach(a => a.addEventListener('click', () => mNav.classList.remove('open')));
+    const hdr = $('header.site');
+    const place = () => { const b = hdr ? Math.max(0, hdr.getBoundingClientRect().bottom) : 0; mNav.style.top = b + 'px'; mNav.style.maxHeight = 'calc(100dvh - ' + b + 'px)'; };
+    const setOpen = on => {
+      if (on) place();
+      mNav.classList.toggle('open', on);
+      document.body.classList.toggle('mnav-open', on);
+      mBtn.setAttribute('aria-expanded', String(on));
+      mBtn.setAttribute('aria-label', on ? 'Close menu' : 'Open menu');
+    };
+    mBtn.setAttribute('aria-expanded', 'false'); mBtn.setAttribute('aria-controls', 'mnav');
+    mBtn.addEventListener('click', () => setOpen(!mNav.classList.contains('open')));
+    $$('a', mNav).forEach(a => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && mNav.classList.contains('open')) { setOpen(false); mBtn.focus(); } });
+    document.addEventListener('click', e => { if (mNav.classList.contains('open') && !mNav.contains(e.target) && !mBtn.contains(e.target)) setOpen(false); });
+    window.addEventListener('resize', () => { if (mNav.classList.contains('open')) { if (innerWidth > 860) setOpen(false); else place(); } });
+    window.addEventListener('scroll', () => { if (mNav.classList.contains('open')) place(); }, { passive: true });
   }
 
   // Swap in real photos when they load; keep the local dummy image otherwise
@@ -238,7 +252,7 @@ window.SAN = (function () {
   const open = tab => {
     last = document.activeElement; m.hidden = false; document.body.classList.add('no-scroll');
     requestAnimationFrame(() => m.classList.add('in')); show(tab || 'login');
-    const nav = document.getElementById('mnav'); if (nav) nav.classList.remove('open');
+    const nav = document.getElementById('mnav'); if (nav) { nav.classList.remove('open'); document.body.classList.remove('mnav-open'); }
   };
   const close = () => {
     if (document.getElementById('acApp') && SAN.user() && document.getElementById('acApp').hidden) { location.reload(); return; }

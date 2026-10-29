@@ -2231,3 +2231,14 @@ header.site nav.main a.active{font-weight:500}
   .topbar .l a{white-space:nowrap}
 }
 @media (max-width:360px){.topbar{font-size:12px}.topbar svg{margin-right:4px}}
+
+/* ---------- mobile menu: sits right under the header, no overlaps ---------- */
+.m-nav{overflow-y:auto;overscroll-behavior:contain;padding:8px 20px 24px;border-top:1px solid var(--line)}
+.m-nav a{padding:15px 4px}
+.m-nav a.btn{display:flex;justify-content:center;align-items:center;color:#fff;border-bottom:0;margin-top:18px;padding:14px 24px}
+.m-nav .m-login{display:block;width:100%;text-align:left;padding:15px 4px;border-bottom:1px solid var(--line);font:inherit;font-weight:600;color:var(--gold);background:none;cursor:pointer}
+.menu-btn .mb-close,.menu-btn[aria-expanded="true"] .mb-open{display:none}
+.menu-btn[aria-expanded="true"] .mb-close{display:block}
+body.mnav-open .wa{opacity:0;pointer-events:none;transform:scale(.8)}
+.wa{transition:opacity .2s,transform .2s}
+body.mnav-open::after{content:"";position:fixed;inset:0;background:rgba(30,10,4,.35);z-index:48}
