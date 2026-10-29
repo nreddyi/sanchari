@@ -2209,3 +2209,18 @@ header.site nav.main a.active{font-weight:500}
 .legal-upd{font-size:13px;color:var(--muted)!important;margin-bottom:22px!important}
 @media (max-width:900px){.legal{grid-template-columns:1fr;gap:28px}.legal-side{position:static}}
 .article{max-width:980px}
+
+/* ---------- blog post: header + body spacing ---------- */
+.bp-top{padding:36px 0 40px;background:var(--bg)}
+.bp-top .d-crumbs{margin-bottom:30px}
+.bp-top .eyebrow{display:inline-flex}
+.bp-top h1{font-size:clamp(28px,3.4vw,44px);line-height:1.15;margin:14px 0 18px;text-wrap:balance}
+.bp-top .b-meta{margin:0;font-size:14px}
+.bp-body{padding:0 0 96px;background:linear-gradient(var(--bg) 0,var(--bg) 200px,#fff 200px)}
+.bp-body .article-img{margin:0 0 48px;aspect-ratio:16/7.5}
+.bp-body .prose > :first-child{font-size:19px;line-height:1.75;color:var(--ink)}
+.bp-body .prose p{margin:0 0 20px}
+.bp-body .prose h2{font-size:clamp(21px,2vw,25px);margin:44px 0 16px;color:var(--navy)}
+.bp-body .prose ul{margin:4px 0 26px;gap:12px}
+.bp-body .article-cta{margin-top:56px}
+@media (max-width:760px){.bp-top{padding:24px 0 28px}.bp-top .d-crumbs{margin-bottom:20px}.bp-body{padding-bottom:64px;background:linear-gradient(var(--bg) 0,var(--bg) 110px,#fff 110px)}.bp-body .article-img{margin-bottom:32px;aspect-ratio:16/10}.bp-body .prose > :first-child{font-size:17px}.bp-body .prose h2{margin-top:34px}}
