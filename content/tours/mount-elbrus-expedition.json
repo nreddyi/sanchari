@@ -1,0 +1,298 @@
+{
+  "slug": "mount-elbrus-expedition",
+  "order": 14,
+  "title": "Mount Elbrus Expedition: Summit of Europe",
+  "short_name": "Mount Elbrus Expedition",
+  "category": "adventure",
+  "region": "Russia",
+  "region_key": "russia",
+  "zone": "",
+  "travel_styles": [],
+  "featured": true,
+  "badge": "Anmish Adventures",
+  "days": 8,
+  "nights": 7,
+  "price": 129599,
+  "route": "Mineralnye Vody → Elbrus Summit",
+  "card_points": [
+    "Elbrus summit (5,642 m), Europe’s highest",
+    "Acclimatisation to Pastukhov Rocks",
+    "Permits, cable car & meals included"
+  ],
+  "stats": [
+    {
+      "icon": "peak",
+      "value": "5,642 m",
+      "label": "Summit"
+    },
+    {
+      "icon": "cal",
+      "value": "8",
+      "label": "Days"
+    },
+    {
+      "icon": "pin",
+      "value": "Caucasus",
+      "label": "Russia"
+    },
+    {
+      "icon": "user",
+      "value": "Guided",
+      "label": "Expert team"
+    },
+    {
+      "icon": "cert",
+      "value": "Certified",
+      "label": "Completion certificate"
+    }
+  ],
+  "overview": [
+    "An expedition to the summit of Mount Elbrus in the Caucasus — the highest peak in Europe at 5,642 m. The climb is based at the Gara-Bashi high camp, with acclimatisation hikes to Mount Cheget and Pastukhov Rocks before a night summit push.",
+    "A reserve day is built in for weather. Accommodation, meals, permits, the cable car and a professional support team are included."
+  ],
+  "highlights": [
+    {
+      "title": "Elbrus summit",
+      "text": "Europe’s highest point at 5,642 m"
+    },
+    {
+      "title": "Gara-Bashi",
+      "text": "High camp at around 3,800 m"
+    },
+    {
+      "title": "Pastukhov Rocks",
+      "text": "Acclimatisation climb to 4,800 m"
+    },
+    {
+      "title": "Mount Cheget",
+      "text": "Views across the Baksan Valley"
+    }
+  ],
+  "stops": [
+    "Mineralnye Vody",
+    "Terskol",
+    "Mount Cheget",
+    "Gara-Bashi",
+    "Pastukhov Rocks",
+    "Summit"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival at Mineralnye Vody → Terskol/Cheget (2,100 m)",
+      "subtitle": "180 km · 3–4 hours by road",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Meet the team at MRV airport",
+          "text": "Transfer to Terskol/Cheget."
+        },
+        {
+          "time": "Evening",
+          "title": "Expedition briefing",
+          "text": "Followed by dinner."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Acclimatisation hike to Mount Cheget",
+      "subtitle": "Up to 3,100 m",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Gear check & rentals",
+          "text": ""
+        },
+        {
+          "time": "Day",
+          "title": "Hike towards Mount Cheget",
+          "text": "Weather permitting."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Terskol/Cheget → Gara-Bashi (3,800 m)",
+      "subtitle": "Cable car · 1–2 hours",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Move to high camp",
+          "text": "Settle in and acclimatise."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Acclimatisation hike to Pastukhov Rocks (4,800 m)",
+      "subtitle": "6 km · 5–6 hours round trip",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Climb and return",
+          "text": "Rest and hydrate at Gara-Bashi."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Rest day & summit preparation",
+      "subtitle": "Gara-Bashi",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Summit briefing",
+          "text": "Final equipment checks."
+        },
+        {
+          "time": "Night",
+          "title": "Summit push begins",
+          "text": "Around 22:00–23:00 on foot, or 01:00–02:00 by snowcat, depending on conditions."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Summit day: Mount Elbrus (5,642 m)",
+      "subtitle": "16 km · 12–16 hours",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Night",
+          "title": "Gara-Bashi → Pastukhov Rocks",
+          "text": "4 km, 3–4 hours on foot or about 1 hour by snowcat."
+        },
+        {
+          "time": "Morning",
+          "title": "Pastukhov Rocks → Summit",
+          "text": "4 km, about 3–4 hours."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Descend to Gara-Bashi",
+          "text": ""
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Reserve day & descent to Terskol/Cheget",
+      "subtitle": "Contingency",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Summit attempt if needed",
+          "text": "Otherwise descend to Terskol/Cheget and celebrate."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Terskol/Cheget → Mineralnye Vody Airport",
+      "subtitle": "Expedition ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Road transfer to MRV airport",
+          "text": "After breakfast."
+        }
+      ],
+      "draft": false
+    }
+  ],
+  "inclusions": [
+    "Accommodation as per itinerary",
+    "Meals from Day 1 dinner to Day 8 breakfast",
+    "Professional support team & first aid",
+    "Permits, entry, park & camping fees",
+    "Cable car to Gara-Bashi and back",
+    "Airport–hotel transfers",
+    "Mandatory expedition insurance",
+    "Completion certificate from Anmish Adventures"
+  ],
+  "exclusions": [
+    "Flights to and from Mineralnye Vody",
+    "Personal gear (rental on request)",
+    "Breakfast & lunch on arrival day",
+    "Porter for personal luggage",
+    "Personal travel insurance & expenses",
+    "Visa fees",
+    "Emergency evacuation & hospitalisation",
+    "Costs from changes beyond our control"
+  ],
+  "gallery": [
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mount-elbrus-1-636x426.webp",
+      "caption": "Mount Elbrus",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mount-elbrus-1-1-636x426.webp",
+      "caption": "Caucasus",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mount-elbrus-2-636x426.webp",
+      "caption": "Caucasus",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mount-elbrus-3-636x426.webp",
+      "caption": "Caucasus",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mount-elbrus-4-636x426.webp",
+      "caption": "Caucasus",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mount-elbrus-5-636x426.webp",
+      "caption": "Caucasus",
+      "kind": "mountain"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Fitness",
+      "text": "Good cardiovascular fitness is essential. Start a training plan of walking, stair climbs and cardio at least 8–12 weeks before departure."
+    },
+    {
+      "title": "Gear",
+      "text": "A detailed gear list is shared on booking. Personal trekking and mountaineering gear can be rented on request."
+    },
+    {
+      "title": "Altitude",
+      "text": "The itinerary includes acclimatisation days. Guides monitor every trekker and the plan may change for safety."
+    },
+    {
+      "title": "Documents",
+      "text": "A valid passport, visa where required, and medical and evacuation insurance details are needed before travel."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the expedition start and end?",
+      "answer": "The expedition starts and ends at Mineralnye Vody (MRV) airport. Flights are not included."
+    },
+    {
+      "question": "Do I need prior trekking experience?",
+      "answer": "Prior multi-day trekking experience is recommended. Our team will talk you through fitness preparation before you book."
+    },
+    {
+      "question": "What happens if the weather turns?",
+      "answer": "Buffer and reserve days are built in. Final decisions on summit attempts are made by the expedition leaders for everyone’s safety."
+    },
+    {
+      "question": "Who leads the expedition?",
+      "answer": "Adventure journeys are run with Anmish Adventures, led by mountaineer Anmish Varma, with experienced local guides and support staff."
+    }
+  ]
+}

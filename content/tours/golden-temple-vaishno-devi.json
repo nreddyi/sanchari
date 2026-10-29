@@ -1,0 +1,258 @@
+{
+  "slug": "golden-temple-vaishno-devi",
+  "order": 3,
+  "title": "Golden Temple & Vaishno Devi: 5 Days of Faith in the North",
+  "short_name": "Golden Temple & Vaishno Devi",
+  "category": "temple",
+  "region": "Punjab & J&K",
+  "region_key": "punjab-jk",
+  "zone": "north",
+  "travel_styles": [
+    "individual"
+  ],
+  "featured": false,
+  "badge": "",
+  "days": 5,
+  "nights": 4,
+  "price": 14500,
+  "route": "Amritsar → Jammu",
+  "card_points": [
+    "Harmandir Sahib and the Palki Sahib ceremony",
+    "Mata Vaishno Devi yatra from Katra",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "5",
+      "label": "Sacred sites"
+    },
+    {
+      "icon": "map",
+      "value": "~12 km",
+      "label": "Trek to Bhawan"
+    },
+    {
+      "icon": "pin",
+      "value": "3",
+      "label": "Cities visited"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "Two of North India’s most visited shrines in one journey: the Golden Temple in Amritsar, where the langar serves free meals to everyone who comes, and the cave shrine of Mata Vaishno Devi in the Trikuta hills.",
+    "Spend two days in Amritsar, including the Beating Retreat ceremony at the Attari–Wagah border, then travel to Katra for the yatra — on foot, by pony or by helicopter where available."
+  ],
+  "highlights": [
+    {
+      "title": "Golden Temple",
+      "text": "Harmandir Sahib, its sarovar and the night Palki Sahib ceremony"
+    },
+    {
+      "title": "Attari–Wagah",
+      "text": "The Beating Retreat ceremony at the border"
+    },
+    {
+      "title": "Vaishno Devi",
+      "text": "Cave shrine of the Mother Goddess above Katra"
+    },
+    {
+      "title": "Bhairon Baba",
+      "text": "Hilltop temple reached by ropeway after darshan"
+    }
+  ],
+  "stops": [
+    "Amritsar",
+    "Attari–Wagah",
+    "Katra",
+    "Vaishno Devi",
+    "Jammu"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival in Amritsar",
+      "subtitle": "Golden Temple · Overnight: Amritsar",
+      "intro": "Arrive in Amritsar and check in.",
+      "activities": [
+        {
+          "time": "Evening",
+          "title": "Golden Temple (Harmandir Sahib)",
+          "text": "The temple lit up over the sarovar."
+        },
+        {
+          "time": "Night",
+          "title": "Palki Sahib ceremony",
+          "text": "The nightly procession carrying the Guru Granth Sahib."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Amritsar",
+      "subtitle": "Heritage & the border · Overnight: Amritsar",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Jallianwala Bagh & Partition Museum",
+          "text": ""
+        },
+        {
+          "time": "Late morning",
+          "title": "Durgiana Temple",
+          "text": "Lakshmi Narayan temple built in the style of the Golden Temple."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Attari–Wagah Beating Retreat",
+          "text": "The daily flag-lowering ceremony at the border."
+        },
+        {
+          "time": "Evening",
+          "title": "Langar at the Golden Temple (optional)",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Amritsar → Katra",
+      "subtitle": "Into the Trikuta hills · Overnight: Katra",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Katra",
+          "text": "About six hours."
+        },
+        {
+          "time": "Evening",
+          "title": "Yatra registration & rest",
+          "text": "Collect your RFID yatra card. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Katra → Vaishno Devi → Katra",
+      "subtitle": "Mata’s darshan · Overnight: Katra",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Early morning",
+          "title": "Trek to Bhawan",
+          "text": "About 12 km from Banganga; ponies, palkis, battery cars and a Katra–Sanjichhat helicopter are available."
+        },
+        {
+          "time": "Midday",
+          "title": "Mata Vaishno Devi darshan",
+          "text": "In the holy cave."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Bhairon Baba Temple",
+          "text": "By ropeway from Bhawan, then return to Katra."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Katra → Jammu",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Jammu",
+          "text": "Drop-off at Jammu airport or railway station."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Ponies, palkis, helicopter & ropeway tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Temple_%28Harmandir_Sahib%29%2C_Amritsar.jpg?width=1200",
+      "caption": "Golden Temple & Vaishno Devi",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Harmandir_Sahib%2C_Amritsar%2C_India.jpg?width=1200",
+      "caption": "Golden Temple, Amritsar",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mata_Vaishno_Devi_Bhawan%2C_Jammu._India.jpg?width=1200",
+      "caption": "Vaishno Devi",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wagah_-_attari_border_ceremony.jpg?width=1200",
+      "caption": "Attari–Wagah Border",
+      "kind": "city"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Trikuta_Mountains.jpg?width=1200",
+      "caption": "Katra",
+      "kind": "mountain"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "The Vaishno Devi trek is about 12 km each way on a paved path. Ponies, palkis, battery cars and helicopters can be arranged, subject to availability."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "The yatra runs all year. March to June and September to November have the most comfortable weather; winters are cold at Bhawan."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts in Amritsar and ends with a drop-off at Jammu airport or railway station."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "slug": "sacred-kerala",
+  "order": 9,
+  "title": "Sacred Kerala: A 7-Day Spiritual Sojourn Through Temples",
+  "short_name": "Sacred Kerala Sojourn",
+  "category": "temple",
+  "region": "Kerala",
+  "region_key": "kerala",
+  "zone": "south",
+  "travel_styles": [
+    "individual"
+  ],
+  "featured": true,
+  "badge": "",
+  "days": 7,
+  "nights": 6,
+  "price": 11500,
+  "route": "Coimbatore → Thiruvananthapuram",
+  "card_points": [
+    "Kerala’s traditional temple architecture",
+    "One night on a backwater houseboat",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "12",
+      "label": "Sacred temples"
+    },
+    {
+      "icon": "map",
+      "value": "2",
+      "label": "States"
+    },
+    {
+      "icon": "pin",
+      "value": "7",
+      "label": "Cities visited"
+    },
+    {
+      "icon": "boat",
+      "value": "1 night",
+      "label": "Houseboat"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "A slower, reflective journey through Kerala’s temple traditions — from Adiyogi in Coimbatore across the Palakkad Gap to Thrissur, Guruvayur and the backwaters, ending at Thiruvananthapuram.",
+    "Kerala’s temples have a distinct architecture of sloping roofs, wooden carvings and lamp-lit courtyards. Along the way you’ll spend a night on a houseboat, with all meals, stays and private transport arranged."
+  ],
+  "highlights": [
+    {
+      "title": "Guruvayur",
+      "text": "One of the most important Sri Krishna temples in India"
+    },
+    {
+      "title": "Vadakkunnathan",
+      "text": "Thrissur’s great Shiva temple at the heart of the city"
+    },
+    {
+      "title": "Backwaters",
+      "text": "A night aboard a traditional Kerala houseboat"
+    },
+    {
+      "title": "Thiruvananthapuram",
+      "text": "Sree Padmanabhaswamy Temple"
+    }
+  ],
+  "stops": [
+    "Coimbatore",
+    "Thrissur",
+    "Guruvayur",
+    "Kodungallur",
+    "Chottanikkara",
+    "Kochi",
+    "Vaikom",
+    "Alappuzha",
+    "Thiruvananthapuram"
+  ],
+  "itinerary": [
+    {
+      "title": "Coimbatore | Adiyogi → Night drive to Thrissur",
+      "subtitle": "Isha Yoga Center · Overnight: Thrissur",
+      "intro": "Arrive in Coimbatore in the afternoon, check in and freshen up.",
+      "activities": [
+        {
+          "time": "15:30 – 16:00",
+          "title": "Drive to Isha Yoga Center",
+          "text": ""
+        },
+        {
+          "time": "16:00 – 19:00",
+          "title": "Adiyogi & Dhyanalinga",
+          "text": "Around three hours."
+        },
+        {
+          "time": "19:00 – 20:00",
+          "title": "Dinner",
+          "text": "In Coimbatore."
+        },
+        {
+          "time": "20:00 – 23:00",
+          "title": "Night drive to Thrissur",
+          "text": "Through the Palakkad Gap. Overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Thrissur → Vadakkunnathan → Guruvayur",
+      "subtitle": "Shiva & Krishna · Overnight: Guruvayur",
+      "intro": "",
+      "activities": [
+        {
+          "time": "09:00 – 12:00",
+          "title": "Sree Vadakkunnathan Temple",
+          "text": "Around three hours in Thrissur."
+        },
+        {
+          "time": "12:00 – 13:00",
+          "title": "Lunch",
+          "text": ""
+        },
+        {
+          "time": "13:00 – 14:00",
+          "title": "Drive to Guruvayur",
+          "text": ""
+        },
+        {
+          "time": "16:00 – 19:00",
+          "title": "Guruvayur Temple",
+          "text": "Evening darshan. Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Guruvayur → Kodungallur → Chottanikkara → Kochi",
+      "subtitle": "Bhagavathy temples · Overnight: Kochi",
+      "intro": "",
+      "activities": [
+        {
+          "time": "10:00 – 13:00",
+          "title": "Kodungallur Bhagavathy Temple",
+          "text": ""
+        },
+        {
+          "time": "13:00 – 14:00",
+          "title": "Lunch",
+          "text": ""
+        },
+        {
+          "time": "16:00 – 19:00",
+          "title": "Chottanikkara Bhagavathy Temple",
+          "text": ""
+        },
+        {
+          "time": "19:30",
+          "title": "Drive to Kochi",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Kochi → Vaikom → Alappuzha houseboat",
+      "subtitle": "Backwaters · Overnight: Houseboat",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Vaikom Mahadeva Temple",
+          "text": "Historic Shiva temple on the shores of Vembanad Lake."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Board your houseboat",
+          "text": "Cruise the backwaters with lunch on board."
+        },
+        {
+          "time": "Evening",
+          "title": "Sunset on the backwaters",
+          "text": "Dinner and overnight stay on the houseboat."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Alappuzha → Ambalappuzha → Thiruvananthapuram",
+      "subtitle": "Krishna temple & capital city · Overnight: Thiruvananthapuram",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Disembark & Ambalappuzha Sree Krishna Temple",
+          "text": "Famous for its palpayasam offering."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive to Thiruvananthapuram",
+          "text": "Lunch en route."
+        },
+        {
+          "time": "Evening",
+          "title": "Check-in",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Thiruvananthapuram",
+      "subtitle": "Sree Padmanabhaswamy · Overnight: Thiruvananthapuram",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Sree Padmanabhaswamy Temple",
+          "text": "Strict traditional dress code applies."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Attukal Bhagavathy Temple",
+          "text": ""
+        },
+        {
+          "time": "Evening",
+          "title": "At leisure",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Departure",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Check-out",
+          "text": "Drop-off at Thiruvananthapuram airport for your onward journey."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager",
+    "One night on a houseboat"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/Kerala-636x426.jpg",
+      "caption": "Sacred Kerala",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/kerala-guruvayur-temple-636x426.webp",
+      "caption": "Guruvayur Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/kerala-sree-vadakkunnathan-temple-thrissur-636x426.webp",
+      "caption": "Vadakkunnathan",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/kerala-kodungallur-bhagavathy-temple-636x426.webp",
+      "caption": "Kodungallur Bhagavathy",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/kerala-vaikom-mahadeva-temple-636x426.webp",
+      "caption": "Vaikom Mahadeva",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/kerala-ambalappuzha-sree-krishna-swamy-temple-636x426.webp",
+      "caption": "Ambalappuzha",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/kerala-adiyogi-shiva-statue-dhyanalinga-636x426.webp",
+      "caption": "Adiyogi & Dhyanalinga",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "Some shrines involve steps or hill climbs. Tell us about mobility needs and we’ll plan accordingly."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March offers pleasant weather. Festival dates may affect crowds and darshan times."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts in Coimbatore in the afternoon of Day 1 and ends in Thiruvananthapuram."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

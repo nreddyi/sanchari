@@ -1,0 +1,245 @@
+{
+  "slug": "puri-konark-bhubaneswar",
+  "order": 6,
+  "title": "Puri, Konark & Bhubaneswar: 4 Days in Odisha’s Golden Triangle",
+  "short_name": "Puri, Konark & Bhubaneswar",
+  "category": "temple",
+  "region": "Odisha",
+  "region_key": "odisha",
+  "zone": "east",
+  "travel_styles": [
+    "individual"
+  ],
+  "featured": false,
+  "badge": "",
+  "days": 4,
+  "nights": 3,
+  "price": 12500,
+  "route": "Bhubaneswar → Bhubaneswar",
+  "card_points": [
+    "Jagannath Temple, Puri",
+    "UNESCO-listed Konark Sun Temple",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "7",
+      "label": "Sacred sites"
+    },
+    {
+      "icon": "star",
+      "value": "1",
+      "label": "UNESCO site"
+    },
+    {
+      "icon": "pin",
+      "value": "3",
+      "label": "Cities visited"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "Odisha’s golden triangle brings together the temple city of Bhubaneswar, the Jagannath Temple at Puri and the great stone chariot of the Konark Sun Temple.",
+    "Explore Kalinga-style temple architecture, the rock-cut caves of Udayagiri and a village of pattachitra painters, with time by the sea at Puri. A private vehicle, a tour manager, stays and all meals are included."
+  ],
+  "highlights": [
+    {
+      "title": "Jagannath Temple",
+      "text": "One of the Char Dham shrines, home of Lord Jagannath"
+    },
+    {
+      "title": "Konark",
+      "text": "13th-century Sun Temple, a UNESCO World Heritage site"
+    },
+    {
+      "title": "Lingaraj",
+      "text": "Bhubaneswar’s great 11th-century Shiva temple"
+    },
+    {
+      "title": "Raghurajpur",
+      "text": "Heritage village of pattachitra painters"
+    }
+  ],
+  "stops": [
+    "Bhubaneswar",
+    "Dhauli",
+    "Puri",
+    "Raghurajpur",
+    "Konark"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival in Bhubaneswar",
+      "subtitle": "Temple city · Overnight: Bhubaneswar",
+      "intro": "Arrive in Bhubaneswar and check in.",
+      "activities": [
+        {
+          "time": "Afternoon",
+          "title": "Lingaraj Temple",
+          "text": "Non-Hindu visitors can view the temple from the platform outside."
+        },
+        {
+          "time": "Evening",
+          "title": "Mukteswar & Rajarani temples",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Bhubaneswar → Puri",
+      "subtitle": "Caves & the coast · Overnight: Puri",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Udayagiri & Khandagiri caves",
+          "text": "Rock-cut Jain caves from the 2nd century BCE."
+        },
+        {
+          "time": "Late morning",
+          "title": "Dhauli Shanti Stupa",
+          "text": "On the site of the Kalinga war."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive to Puri",
+          "text": "About 1.5 hours."
+        },
+        {
+          "time": "Evening",
+          "title": "Puri beach & Swargadwar",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Puri & Konark",
+      "subtitle": "Jagannath & the Sun Temple · Overnight: Puri",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Early morning",
+          "title": "Jagannath Temple darshan",
+          "text": "Phones, cameras and leather items are not allowed inside."
+        },
+        {
+          "time": "Late morning",
+          "title": "Raghurajpur artisan village",
+          "text": "Pattachitra paintings and palm-leaf engraving."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Konark Sun Temple",
+          "text": "The temple built as the chariot of the Sun God."
+        },
+        {
+          "time": "Evening",
+          "title": "Chandrabhaga beach",
+          "text": "Then back to Puri. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Puri → Bhubaneswar",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Bhubaneswar",
+          "text": "Drop-off at the airport or railway station."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Konark_Sun_Temple_-_North_Side_View.jpg?width=1200",
+      "caption": "Puri, Konark & Bhubaneswar",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Temple_Main_Structure%2C_Konark%2C_Orissa.jpg?width=1200",
+      "caption": "Konark Sun Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Jagannath_Temple%2C_Puri%2C_Odisha.jpg?width=1200",
+      "caption": "Jagannath Temple, Puri",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Lingaraj_temple_Bhubaneswar.jpg?width=1200",
+      "caption": "Lingaraj Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Chandrabhaga_Beach_in_Odisha_21.jpg?width=1200",
+      "caption": "Chandrabhaga Beach",
+      "kind": "wellness"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Temple entry",
+      "text": "Entry into the Jagannath and Lingaraj temples is restricted to Hindus. Other travellers can view Lingaraj from a platform outside and visit Konark and the other sites."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March is the most comfortable time. The Rath Yatra in Puri (June or July) is spectacular but very crowded."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts and ends in Bhubaneswar."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

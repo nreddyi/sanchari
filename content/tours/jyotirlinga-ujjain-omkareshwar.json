@@ -1,0 +1,239 @@
+{
+  "slug": "jyotirlinga-ujjain-omkareshwar",
+  "order": 4,
+  "title": "Jyotirlinga Trail: 4 Days in Ujjain, Omkareshwar & Maheshwar",
+  "short_name": "Ujjain & Omkareshwar Jyotirlinga",
+  "category": "temple",
+  "region": "Madhya Pradesh",
+  "region_key": "madhyapradesh",
+  "zone": "central",
+  "travel_styles": [
+    "individual"
+  ],
+  "featured": false,
+  "badge": "",
+  "days": 4,
+  "nights": 3,
+  "price": 9500,
+  "route": "Indore → Indore",
+  "card_points": [
+    "Two Jyotirlingas: Mahakaleshwar & Omkareshwar",
+    "Mahakal Lok and the Narmada ghats",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "8",
+      "label": "Sacred temples"
+    },
+    {
+      "icon": "map",
+      "value": "2",
+      "label": "Jyotirlingas"
+    },
+    {
+      "icon": "pin",
+      "value": "4",
+      "label": "Cities visited"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "A short, rewarding circuit in Madhya Pradesh that covers two of the twelve Jyotirlingas — Mahakaleshwar in Ujjain and Omkareshwar on an island in the Narmada — along with the ghats of Maheshwar.",
+    "Ideal for a long weekend, with a private vehicle from Indore, a tour manager, comfortable stays and all meals included. We can help you apply for the early-morning Bhasma Aarti at Mahakaleshwar."
+  ],
+  "highlights": [
+    {
+      "title": "Mahakaleshwar",
+      "text": "Jyotirlinga of Ujjain and the Mahakal Lok corridor"
+    },
+    {
+      "title": "Omkareshwar",
+      "text": "Jyotirlinga on Mandhata island in the Narmada"
+    },
+    {
+      "title": "Ekatma Dham",
+      "text": "The 108-ft Statue of Oneness of Adi Shankaracharya"
+    },
+    {
+      "title": "Maheshwar",
+      "text": "Ahilya Fort and the Narmada ghats"
+    }
+  ],
+  "stops": [
+    "Indore",
+    "Ujjain",
+    "Omkareshwar",
+    "Maheshwar"
+  ],
+  "itinerary": [
+    {
+      "title": "Indore → Ujjain",
+      "subtitle": "Mahakal · Overnight: Ujjain",
+      "intro": "Pick-up in Indore and drive to Ujjain (about 1.5 hours).",
+      "activities": [
+        {
+          "time": "Afternoon",
+          "title": "Mahakal Lok",
+          "text": "The temple corridor with murals and sculptures from Shiva’s stories."
+        },
+        {
+          "time": "Evening",
+          "title": "Mahakaleshwar darshan & Ram Ghat aarti",
+          "text": "On the Shipra river. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Ujjain → Omkareshwar",
+      "subtitle": "Temples of Ujjain · Overnight: Omkareshwar",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Early morning",
+          "title": "Bhasma Aarti (if booked)",
+          "text": "Requires advance online booking and is subject to availability."
+        },
+        {
+          "time": "Morning",
+          "title": "Kal Bhairav, Harsiddhi & Sandipani Ashram",
+          "text": ""
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive to Omkareshwar",
+          "text": "About three hours. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Omkareshwar → Maheshwar → Indore",
+      "subtitle": "Narmada · Overnight: Indore",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Omkareshwar & Mamleshwar darshan",
+          "text": "Cross to Mandhata island by bridge or boat."
+        },
+        {
+          "time": "Late morning",
+          "title": "Ekatma Dham",
+          "text": "Statue of Oneness of Adi Shankaracharya."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Maheshwar",
+          "text": "Ahilya Fort, the ghats and Maheshwari weavers."
+        },
+        {
+          "time": "Evening",
+          "title": "Drive to Indore",
+          "text": "Sarafa night food market (optional). Overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Indore",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Khajrana Ganesh Temple & Rajwada",
+          "text": "Then drop-off at Indore airport or railway station."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Omkareshwar_Mandhata_island.jpg?width=1200",
+      "caption": "Ujjain & Omkareshwar",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahakaleshwar_Temple%2C_Ujjain.jpg?width=1200",
+      "caption": "Mahakaleshwar, Ujjain",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple_view_omkareshwar.jpg?width=1200",
+      "caption": "Omkareshwar",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Maheshwar_Fort-Ahilya_Ghat.jpg?width=1200",
+      "caption": "Maheshwar Ghats",
+      "kind": "city"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Ram_Ghat%2C_Ujjain_01.jpg?width=1200",
+      "caption": "Ram Ghat, Ujjain",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "Some shrines involve steps or hill climbs. Tell us about mobility needs and we’ll plan accordingly."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March is the most comfortable time. Shravan (July–August) and Mahashivratri bring very large crowds."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts and ends in Indore."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

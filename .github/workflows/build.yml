@@ -1,0 +1,44 @@
+name: Rebuild website
+
+# Runs whenever tours (or the site source) change — e.g. after saving in the dashboard.
+on:
+  push:
+    branches: [main]
+    paths: ["content/**", "src/**", "assets/uploads/**", ".github/workflows/build.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build pages
+        run: python3 src/build.py /tmp/site
+      - name: Copy built pages into the site
+        run: |
+          set -e
+          # remove old generated pages, keep uploads and source folders
+          find . -maxdepth 1 -name "*.html" -delete
+          rm -rf assets/css assets/js assets/img
+          cp /tmp/site/*.html .
+          mkdir -p assets
+          cp -r /tmp/site/assets/css /tmp/site/assets/js /tmp/site/assets/img assets/
+          touch .nojekyll
+      - name: Save the rebuilt site
+        run: |
+          git config user.name "sanchari-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git commit -m "Rebuild website from dashboard changes"
+          git push

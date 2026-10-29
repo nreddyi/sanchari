@@ -1,0 +1,189 @@
+# Sanchari dashboard (Pages CMS) — sign in at https://app.pagescms.org with GitHub.
+media:
+  input: assets/uploads
+  output: assets/uploads
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: tours
+    label: Tour packages
+    type: collection
+    path: content/tours
+    format: json
+    filename: "{fields.slug}.json"
+    view:
+      fields: [title, category, region, price, days]
+      primary: title
+      sort: [order, title]
+    fields:
+      # ---------- Basics
+      - name: title
+        label: Full title
+        type: string
+        required: true
+        description: "Shown at the top of the tour page, e.g. Everest Base Camp & Kala Patthar Trek"
+      - name: short_name
+        label: Short name
+        type: string
+        required: true
+        description: "Used on cards, menus and the booking form"
+      - name: slug
+        label: Page address
+        type: string
+        required: true
+        pattern: "^[a-z0-9-]+$"
+        description: "Lowercase words joined by hyphens. The page will be tour-<this>.html. Don't change it for an existing tour or old links will break."
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values:
+            - { value: temple, label: Temple }
+            - { value: adventure, label: Adventure }
+            - { value: wellness, label: Wellness }
+      - name: region
+        label: Destination (state or country)
+        type: string
+        required: true
+      - name: region_key
+        label: Destination key
+        type: string
+        pattern: "^[a-z0-9-]*$"
+        description: "Lowercase, no spaces (e.g. kerala). Tours with the same key are grouped in filters and the Home destinations carousel."
+      - name: zone
+        label: Region of India (temple tours)
+        type: select
+        options:
+          values:
+            - { value: north, label: North India }
+            - { value: south, label: South India }
+            - { value: west, label: West India }
+            - { value: east, label: East India }
+            - { value: central, label: Central India }
+      - name: travel_styles
+        label: Travel styles
+        type: select
+        options:
+          multiple: true
+          values:
+            - { value: individual, label: Individual / family }
+            - { value: group, label: Group departure }
+      - name: price
+        label: Price per person (₹)
+        type: number
+        required: true
+      - name: days
+        label: Days
+        type: number
+        required: true
+      - name: nights
+        label: Nights
+        type: number
+      - name: route
+        label: Route
+        type: string
+        description: "e.g. Kathmandu → Everest Base Camp"
+      - name: order
+        label: Display order
+        type: number
+        description: "Lower numbers appear first"
+      - name: featured
+        label: Featured
+        type: boolean
+      - name: badge
+        label: Badge (optional)
+        type: string
+        description: "Small label on the card, e.g. Seasonal"
+      - name: hidden
+        label: Hide this tour from the website
+        type: boolean
+
+      # ---------- Card + top of page
+      - name: card_points
+        label: Card highlights (3 short lines)
+        type: string
+        list: true
+      - name: stats
+        label: Key facts strip
+        type: object
+        list: true
+        fields:
+          - name: icon
+            type: select
+            options:
+              values: [temple, peak, cal, pin, map, car, meal, boat, wave, star, user, users, shield, cert, home, heart, clock, compass]
+          - { name: value, type: string }
+          - { name: label, type: string }
+
+      # ---------- Overview
+      - name: overview
+        label: Overview paragraphs
+        type: text
+        list: true
+      - name: highlights
+        label: Highlights
+        type: object
+        list: true
+        fields:
+          - { name: title, type: string }
+          - { name: text, type: string }
+      - name: stops
+        label: Route stops (in order)
+        type: string
+        list: true
+
+      # ---------- Itinerary
+      - name: itinerary
+        label: Day-by-day itinerary
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Day title, type: string }
+          - { name: subtitle, label: Subtitle (overnight, hours…), type: string }
+          - { name: intro, label: Intro (optional), type: text }
+          - name: activities
+            label: Activities
+            type: object
+            list: true
+            fields:
+              - { name: time, label: "Time (Morning, Afternoon…)", type: string }
+              - { name: title, type: string }
+              - { name: text, type: text }
+          - { name: draft, label: "Draft day (not yet confirmed)", type: boolean }
+
+      # ---------- Inclusions
+      - name: inclusions
+        label: Included
+        type: string
+        list: true
+      - name: exclusions
+        label: Not included
+        type: string
+        list: true
+
+      # ---------- Gallery
+      - name: gallery
+        label: Gallery photos (first photo is the main image)
+        type: object
+        list: true
+        fields:
+          - { name: image, label: Photo, type: image, description: "Upload a photo or paste an image link" }
+          - { name: caption, type: string }
+          - { name: kind, type: string, hidden: true }
+
+      # ---------- Good to know + FAQs
+      - name: good_to_know
+        label: Good to know
+        type: object
+        list: true
+        fields:
+          - { name: title, type: string }
+          - { name: text, type: text }
+      - name: faqs
+        label: FAQs
+        type: object
+        list: true
+        fields:
+          - { name: question, type: string }
+          - { name: answer, type: text }

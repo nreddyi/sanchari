@@ -1,0 +1,379 @@
+{
+  "slug": "tamil-nadu-temple-journey",
+  "order": 8,
+  "title": "Tamil Nadu Temple Journey: 7 Days Through Its Living Temples",
+  "short_name": "Tamil Nadu Temple Journey",
+  "category": "temple",
+  "region": "Tamil Nadu",
+  "region_key": "tamilnadu",
+  "zone": "south",
+  "travel_styles": [
+    "individual",
+    "group"
+  ],
+  "featured": true,
+  "badge": "",
+  "days": 7,
+  "nights": 6,
+  "price": 10500,
+  "route": "Velliangiri → Mahabalipuram",
+  "card_points": [
+    "Living Dravidian temples still in daily worship",
+    "Adiyogi, Srirangam & Thanjavur",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "12",
+      "label": "Sacred temples"
+    },
+    {
+      "icon": "map",
+      "value": "800+ km",
+      "label": "Covered by road"
+    },
+    {
+      "icon": "pin",
+      "value": "8",
+      "label": "Cities visited"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "Your sacred journey at a glance: from Adiyogi at the foot of the Velliangiri hills, through twelve of Tamil Nadu’s great temples, to the shore temples of Mahabalipuram and the temple town of Kanchipuram.",
+    "Tamil Nadu’s temples are living places of worship, with rituals that have continued for more than a thousand years. Each day is planned around darshan times, with comfortable stays, all meals and a private vehicle throughout."
+  ],
+  "highlights": [
+    {
+      "title": "Adiyogi",
+      "text": "The 112-ft Shiva face and Dhyanalinga at the Isha Yoga Center"
+    },
+    {
+      "title": "Srirangam",
+      "text": "Sri Ranganathaswamy, one of the largest functioning temple complexes in the world"
+    },
+    {
+      "title": "Thanjavur",
+      "text": "Brihadeeswarar, the great Chola temple and UNESCO World Heritage site"
+    },
+    {
+      "title": "Mahabalipuram",
+      "text": "Pallava-era Shore Temple and rock-cut monuments"
+    }
+  ],
+  "stops": [
+    "Coimbatore",
+    "Palani",
+    "Trichy",
+    "Srirangam",
+    "Thanjavur",
+    "Chidambaram",
+    "Tiruvannamalai",
+    "Kanchipuram",
+    "Mahabalipuram"
+  ],
+  "itinerary": [
+    {
+      "title": "Hyderabad → Coimbatore | Isha Yoga Center",
+      "subtitle": "Adiyogi & Dhyanalinga · Overnight: Coimbatore",
+      "intro": "",
+      "activities": [
+        {
+          "time": "10:10 – 11:35",
+          "title": "Flight to Coimbatore",
+          "text": "Hyderabad to Coimbatore."
+        },
+        {
+          "time": "11:35 – 13:00",
+          "title": "Airport transfer & check-in",
+          "text": ""
+        },
+        {
+          "time": "13:00 – 14:00",
+          "title": "Lunch",
+          "text": "A traditional Kongu-style meal."
+        },
+        {
+          "time": "14:00 – 16:30",
+          "title": "Rest & freshen up",
+          "text": ""
+        },
+        {
+          "time": "17:00 – 20:00",
+          "title": "Adiyogi & Dhyanalinga",
+          "text": "Around three hours at the Isha Yoga Center."
+        },
+        {
+          "time": "21:00",
+          "title": "Dinner & overnight stay",
+          "text": "Coimbatore."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Coimbatore → Palani Murugan → Trichy",
+      "subtitle": "Hill temple & Rockfort · Overnight: Trichy",
+      "intro": "",
+      "activities": [
+        {
+          "time": "06:30 – 08:00",
+          "title": "Breakfast",
+          "text": ""
+        },
+        {
+          "time": "08:00 – 10:30",
+          "title": "Drive to Palani",
+          "text": ""
+        },
+        {
+          "time": "10:30 – 13:30",
+          "title": "Palani Dhandayuthapani Swamy Temple",
+          "text": "Reach the hilltop by ropeway or 690 steps."
+        },
+        {
+          "time": "13:30 – 14:30",
+          "title": "Lunch",
+          "text": "In Palani."
+        },
+        {
+          "time": "14:30 – 18:00",
+          "title": "Drive to Tiruchirappalli",
+          "text": "Via Dindigul."
+        },
+        {
+          "time": "19:00 – 21:00",
+          "title": "Rockfort Temple (optional)",
+          "text": "Evening visit to the hilltop temple. Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Trichy → Srirangam → Thanjavur",
+      "subtitle": "Two of South India’s grandest temples · Overnight: Thanjavur",
+      "intro": "",
+      "activities": [
+        {
+          "time": "06:30 – 09:00",
+          "title": "Breakfast & check-out",
+          "text": ""
+        },
+        {
+          "time": "09:30 – 12:30",
+          "title": "Sri Ranganathaswamy Temple, Srirangam",
+          "text": "Around three hours at the temple."
+        },
+        {
+          "time": "12:30 – 13:30",
+          "title": "Lunch",
+          "text": ""
+        },
+        {
+          "time": "13:30 – 15:00",
+          "title": "Drive to Thanjavur",
+          "text": ""
+        },
+        {
+          "time": "15:00 – 18:00",
+          "title": "Brihadeeswarar Temple",
+          "text": "The great Chola temple."
+        },
+        {
+          "time": "18:00 – 21:30",
+          "title": "Explore Thanjavur",
+          "text": "Royal Palace, Saraswati Mahal Library and bazaars. Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Thanjavur → Kumbakonam → Chidambaram",
+      "subtitle": "Chola country · Overnight: Chidambaram",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Airavatesvara Temple, Darasuram",
+          "text": "UNESCO-listed Chola temple near Kumbakonam."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive to Chidambaram",
+          "text": "Lunch en route."
+        },
+        {
+          "time": "Evening",
+          "title": "Thillai Nataraja Temple",
+          "text": "Evening rituals at the temple of the cosmic dancer. Overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Chidambaram → Tiruvannamalai",
+      "subtitle": "Arunachala · Overnight: Tiruvannamalai",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Tiruvannamalai",
+          "text": ""
+        },
+        {
+          "time": "Afternoon",
+          "title": "Arunachaleswarar Temple",
+          "text": "One of the Pancha Bhoota Sthalams, at the foot of Arunachala hill."
+        },
+        {
+          "time": "Evening",
+          "title": "Girivalam path (optional)",
+          "text": "Walk part of the sacred path around the hill. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Tiruvannamalai → Kanchipuram → Mahabalipuram",
+      "subtitle": "City of a thousand temples · Overnight: Mahabalipuram",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Kanchipuram",
+          "text": ""
+        },
+        {
+          "time": "Late morning",
+          "title": "Kamakshi Amman & Ekambareswarar",
+          "text": "Two of Kanchipuram’s principal temples."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Kailasanathar Temple",
+          "text": "Pallava sandstone temple. Then continue to Mahabalipuram."
+        },
+        {
+          "time": "Evening",
+          "title": "Check-in",
+          "text": "Dinner and overnight stay by the coast."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Mahabalipuram → Chennai",
+      "subtitle": "Shore Temple · Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Shore Temple & Pancha Rathas",
+          "text": "Pallava-era monuments on the Bay of Bengal."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive to Chennai",
+          "text": "Drop-off at Chennai airport for your onward journey."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/Tamilnadu-636x426.webp",
+      "caption": "Tamil Nadu Temples",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/tamilnadu-adi-yogi-636x426.webp",
+      "caption": "Adiyogi",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/tamilnadu-palani-dhandayuthapani-swamy-temple-636x426.webp",
+      "caption": "Palani Murugan",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/tamilnadu-brihadeeswarar-temple-636x426.webp",
+      "caption": "Brihadeeswarar Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/tamilnadu-rockfort-temple-636x426.webp",
+      "caption": "Rockfort Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/tamilnadu-nataraja-temple-chidambaram-636x426.webp",
+      "caption": "Nataraja Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/tamilnadu-arunachaleswarar-temple-636x426.webp",
+      "caption": "Arunachaleswarar",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "Some shrines involve steps or hill climbs. Tell us about mobility needs and we’ll plan accordingly."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March offers pleasant weather. Festival dates may affect crowds and darshan times."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts with a morning flight from Hyderabad to Coimbatore and ends in Chennai."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

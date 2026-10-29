@@ -1,0 +1,277 @@
+{
+  "slug": "dwarka-somnath",
+  "order": 5,
+  "title": "Dwarka & Somnath: 6 Days Through Gujarat’s Sacred Coast",
+  "short_name": "Dwarka & Somnath",
+  "category": "temple",
+  "region": "Gujarat",
+  "region_key": "gujarat",
+  "zone": "west",
+  "travel_styles": [
+    "group"
+  ],
+  "featured": false,
+  "badge": "",
+  "days": 6,
+  "nights": 5,
+  "price": 18500,
+  "route": "Ahmedabad → Ahmedabad",
+  "card_points": [
+    "Dwarkadhish, Nageshwar & Bet Dwarka",
+    "Somnath, the first Jyotirlinga",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "9",
+      "label": "Sacred temples"
+    },
+    {
+      "icon": "map",
+      "value": "2",
+      "label": "Jyotirlingas"
+    },
+    {
+      "icon": "pin",
+      "value": "5",
+      "label": "Cities visited"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "Follow Gujarat’s Saurashtra coast to the kingdom of Lord Krishna at Dwarka and the shore temple of Somnath, the first of the twelve Jyotirlingas.",
+    "Along the way visit Nageshwar Jyotirlinga, cross the Sudarshan Setu to Bet Dwarka and stop at Porbandar, birthplace of Mahatma Gandhi. A private vehicle, a tour manager, comfortable stays and all meals are included."
+  ],
+  "highlights": [
+    {
+      "title": "Dwarkadhish",
+      "text": "Jagat Mandir of Lord Krishna above the Gomti Ghat"
+    },
+    {
+      "title": "Nageshwar",
+      "text": "One of the twelve Jyotirlingas, near Dwarka"
+    },
+    {
+      "title": "Bet Dwarka",
+      "text": "Island shrine reached by the Sudarshan Setu bridge"
+    },
+    {
+      "title": "Somnath",
+      "text": "The first Jyotirlinga, on the Arabian Sea"
+    }
+  ],
+  "stops": [
+    "Ahmedabad",
+    "Dwarka",
+    "Nageshwar",
+    "Bet Dwarka",
+    "Porbandar",
+    "Somnath"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival in Ahmedabad",
+      "subtitle": "City of Gandhi · Overnight: Ahmedabad",
+      "intro": "Arrive in Ahmedabad and check in.",
+      "activities": [
+        {
+          "time": "Afternoon",
+          "title": "Sabarmati Ashram",
+          "text": "Gandhi’s home on the Sabarmati river."
+        },
+        {
+          "time": "Evening",
+          "title": "Akshardham, Gandhinagar",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Ahmedabad → Dwarka",
+      "subtitle": "Saurashtra drive · Overnight: Dwarka",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Drive to Dwarka",
+          "text": "A full-day drive with stops for meals."
+        },
+        {
+          "time": "Evening",
+          "title": "Dwarkadhish Temple aarti",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Dwarka: Nageshwar & Bet Dwarka",
+      "subtitle": "Krishna’s kingdom · Overnight: Dwarka",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Dwarkadhish darshan & Gomti Ghat",
+          "text": ""
+        },
+        {
+          "time": "Late morning",
+          "title": "Nageshwar Jyotirlinga",
+          "text": ""
+        },
+        {
+          "time": "Afternoon",
+          "title": "Bet Dwarka via the Sudarshan Setu",
+          "text": "Then Gopi Talav and Rukmini Devi Temple."
+        },
+        {
+          "time": "Evening",
+          "title": "At leisure",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Dwarka → Porbandar → Somnath",
+      "subtitle": "Coastal road · Overnight: Somnath",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Porbandar",
+          "text": "Kirti Mandir, Gandhi’s birthplace, and Sudama Temple."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Continue to Somnath",
+          "text": "Along the coast."
+        },
+        {
+          "time": "Evening",
+          "title": "Somnath aarti & light-and-sound show",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Somnath → Ahmedabad",
+      "subtitle": "First Jyotirlinga · Overnight: Ahmedabad",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Somnath darshan, Bhalka Tirth & Triveni Sangam",
+          "text": ""
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive to Ahmedabad",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Departure",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drop-off",
+          "text": "At Ahmedabad airport or railway station."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dwarkadhish_Temple%2C_Dwarka%2C_Gujarat.JPG?width=1200",
+      "caption": "Dwarka & Somnath",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dwarakadhish_Temple_Of_Lord_Krishna%2C_At_Dwarka%2C_Gujarat..JPG?width=1200",
+      "caption": "Dwarkadhish Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Somnath_Temple_Patan_Gujarat.jpg?width=1200",
+      "caption": "Somnath Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shri_Nageshwar_Jyotirling_temple%2C_Dwarka%2C_Gujarat.jpg?width=1200",
+      "caption": "Nageshwar Jyotirlinga",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dwarka_temple_Gomati_ghat.jpg?width=1200",
+      "caption": "Gomti Ghat, Dwarka",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "Some shrines involve steps or hill climbs. Tell us about mobility needs and we’ll plan accordingly."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March is the most comfortable time. Janmashtami at Dwarka and Mahashivratri at Somnath are special but crowded."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts and ends in Ahmedabad."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

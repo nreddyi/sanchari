@@ -1,0 +1,315 @@
+{
+  "slug": "sacred-karnataka",
+  "order": 11,
+  "title": "Sacred Karnataka: 6 Days From Mysuru to the Konkan Coast",
+  "short_name": "Sacred Karnataka",
+  "category": "wellness",
+  "region": "Karnataka",
+  "region_key": "karnataka",
+  "zone": "",
+  "travel_styles": [],
+  "featured": true,
+  "badge": "",
+  "days": 6,
+  "nights": 5,
+  "price": 9500,
+  "route": "Mysuru → Goa",
+  "card_points": [
+    "Hoysala temples of Belur & Halebeedu",
+    "Western Ghats and the Konkan coast",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "9",
+      "label": "Sacred temples"
+    },
+    {
+      "icon": "map",
+      "value": "800+ km",
+      "label": "Covered by road"
+    },
+    {
+      "icon": "wave",
+      "value": "3",
+      "label": "Sacred beaches"
+    },
+    {
+      "icon": "star",
+      "value": "2",
+      "label": "UNESCO sites"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "A restorative journey across Karnataka — from Chamundi Hill in Mysuru to the carved Hoysala temples of Belur and Halebeedu, through the forests of the Western Ghats, and down to the quiet sacred beaches of the Konkan coast.",
+    "Unhurried days, comfortable stays and time by the sea at Murudeshwar and Gokarna make this a gentle mix of pilgrimage and renewal. A private vehicle and all meals are included."
+  ],
+  "highlights": [
+    {
+      "title": "Mysuru",
+      "text": "Chamundeshwari Temple on Chamundi Hill"
+    },
+    {
+      "title": "Belur & Halebeedu",
+      "text": "Hoysala temples, part of a UNESCO World Heritage site"
+    },
+    {
+      "title": "Western Ghats",
+      "text": "Kukke Subramanya and Dharmasthala in the forested hills"
+    },
+    {
+      "title": "Konkan coast",
+      "text": "Murudeshwar and Gokarna’s sacred beaches"
+    }
+  ],
+  "stops": [
+    "Bengaluru",
+    "Mysuru",
+    "Halebeedu",
+    "Belur",
+    "Hassan",
+    "Kukke Subramanya",
+    "Dharmasthala",
+    "Udupi",
+    "Murudeshwar",
+    "Gokarna",
+    "Goa"
+  ],
+  "itinerary": [
+    {
+      "title": "Bengaluru → Mysuru | Chamundeshwari",
+      "subtitle": "Overnight: Mysuru",
+      "intro": "Arrive at Kempegowda International Airport, Bengaluru, and meet your driver.",
+      "activities": [
+        {
+          "time": "12:30 – 16:00",
+          "title": "Drive to Mysuru",
+          "text": "Via Ramanagara and Mandya."
+        },
+        {
+          "time": "16:30 – 18:30",
+          "title": "Chamundeshwari Temple",
+          "text": "On Chamundi Hill, including evening arati."
+        },
+        {
+          "time": "19:00",
+          "title": "Dinner & overnight stay",
+          "text": "Mysuru."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Mysuru → Halebeedu → Belur → Hassan",
+      "subtitle": "Hoysala masterpieces · Overnight: Hassan",
+      "intro": "",
+      "activities": [
+        {
+          "time": "08:00 – 12:00",
+          "title": "Drive to Halebeedu",
+          "text": ""
+        },
+        {
+          "time": "12:00 – 13:00",
+          "title": "Lunch",
+          "text": ""
+        },
+        {
+          "time": "13:00 – 16:00",
+          "title": "Hoysaleswara Temple, Halebeedu",
+          "text": "Twin-shrined Hoysala temple."
+        },
+        {
+          "time": "16:45 – 19:30",
+          "title": "Chennakeshava Temple, Belur",
+          "text": ""
+        },
+        {
+          "time": "20:30 – 21:30",
+          "title": "Drive to Hassan",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Hassan → Kukke Subramanya → Dharmasthala",
+      "subtitle": "Western Ghats · Overnight: Dharmasthala",
+      "intro": "",
+      "activities": [
+        {
+          "time": "08:00 – 10:30",
+          "title": "Drive through the Western Ghats",
+          "text": ""
+        },
+        {
+          "time": "10:30 – 13:30",
+          "title": "Kukke Subramanya Temple",
+          "text": ""
+        },
+        {
+          "time": "13:30 – 14:30",
+          "title": "Lunch",
+          "text": ""
+        },
+        {
+          "time": "16:30 – 19:30",
+          "title": "Dharmasthala Manjunatha Temple",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Dharmasthala → Udupi → Murudeshwar",
+      "subtitle": "To the coast · Overnight: Murudeshwar",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Udupi Sri Krishna Temple",
+          "text": ""
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive along the coast to Murudeshwar",
+          "text": "Lunch en route."
+        },
+        {
+          "time": "Evening",
+          "title": "Murudeshwar Temple & beach",
+          "text": "The towering Shiva statue at sunset. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Murudeshwar → Gokarna",
+      "subtitle": "Sacred beaches · Overnight: Gokarna",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Gokarna",
+          "text": ""
+        },
+        {
+          "time": "Late morning",
+          "title": "Mahabaleshwar Temple",
+          "text": ""
+        },
+        {
+          "time": "Afternoon",
+          "title": "Om Beach & Kudle Beach",
+          "text": "Time to unwind by the sea."
+        },
+        {
+          "time": "Evening",
+          "title": "At leisure",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Gokarna → Goa",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Goa",
+          "text": "Drop-off at Goa airport for your onward journey."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/bangalore-palace-636x426.webp",
+      "caption": "Sacred Karnataka",
+      "kind": "wellness"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/karnataka-chamundeshwari-temple-636x426.webp",
+      "caption": "Chamundeshwari",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/karanataka-hoysaleswara-temple-636x426.webp",
+      "caption": "Hoysaleswara Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/karanataka-chennakeshava-temple-636x426.webp",
+      "caption": "Chennakeshava Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/karnataka-kukke-subramanya-temple-636x426.webp",
+      "caption": "Kukke Subramanya",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/karanataka-dharmasthala-temple-636x426.webp",
+      "caption": "Dharmasthala",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "Some shrines involve steps or hill climbs. Tell us about mobility needs and we’ll plan accordingly."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March offers pleasant weather. Festival dates may affect crowds and darshan times."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts at Bengaluru airport on Day 1 and ends in Goa."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

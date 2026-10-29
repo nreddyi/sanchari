@@ -1,0 +1,314 @@
+{
+  "slug": "sacred-andhra-pradesh",
+  "order": 10,
+  "title": "Sacred Andhra Pradesh: 6 Days Across AP Temples",
+  "short_name": "Sacred Andhra Pradesh",
+  "category": "temple",
+  "region": "Andhra Pradesh",
+  "region_key": "andhra",
+  "zone": "south",
+  "travel_styles": [
+    "group"
+  ],
+  "featured": true,
+  "badge": "",
+  "days": 6,
+  "nights": 5,
+  "price": 7500,
+  "route": "Vijayawada → Vizag",
+  "card_points": [
+    "Kanaka Durga Temple, Vijayawada",
+    "Godavari temples to Simhachalam",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "11",
+      "label": "Sacred temples"
+    },
+    {
+      "icon": "map",
+      "value": "700+ km",
+      "label": "Covered by road"
+    },
+    {
+      "icon": "pin",
+      "value": "7",
+      "label": "Cities visited"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "Eleven darshans across Andhra Pradesh, from Kanaka Durga on Indrakeeladri hill in Vijayawada to Simhachalam in Visakhapatnam — following the Krishna and Godavari through some of the state’s most important pilgrimage centres.",
+    "The route includes Pancharama shrines, Bhadrachalam’s Sri Rama temple and the coastal temples of the north. A private vehicle, a tour manager, stays and all meals are included."
+  ],
+  "highlights": [
+    {
+      "title": "Kanaka Durga",
+      "text": "Hilltop shrine overlooking the Krishna in Vijayawada"
+    },
+    {
+      "title": "Bhadrachalam",
+      "text": "Sri Sita Ramachandra Swamy Temple on the Godavari"
+    },
+    {
+      "title": "Pancharamas",
+      "text": "Amararama and Draksharama, ancient Shiva shrines"
+    },
+    {
+      "title": "Simhachalam",
+      "text": "Varaha Lakshmi Narasimha Temple near Vizag"
+    }
+  ],
+  "stops": [
+    "Vijayawada",
+    "Amararama",
+    "Bhadrachalam",
+    "Dwarka Tirumala",
+    "Draksharama",
+    "Kakinada",
+    "Annavaram",
+    "Visakhapatnam"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival in Vijayawada | Kanaka Durga Darshan",
+      "subtitle": "Overnight: Vijayawada",
+      "intro": "Arrive at Vijayawada Airport, meet your vehicle and tour manager, and check in.",
+      "activities": [
+        {
+          "time": "15:00 – 16:00",
+          "title": "Drive to Sri Kanaka Durga Temple",
+          "text": ""
+        },
+        {
+          "time": "16:00 – 19:30",
+          "title": "Kanaka Durga darshan",
+          "text": "Around three and a half hours."
+        },
+        {
+          "time": "19:30 – 20:30",
+          "title": "Dinner & overnight stay",
+          "text": "Vijayawada."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Vijayawada → Amararama → Bhadrachalam",
+      "subtitle": "Pancharama & Sri Rama · Overnight: Bhadrachalam",
+      "intro": "",
+      "activities": [
+        {
+          "time": "08:00 – 09:30",
+          "title": "Drive to Amararama",
+          "text": ""
+        },
+        {
+          "time": "09:30 – 11:30",
+          "title": "Amararama Temple",
+          "text": "One of the five Pancharama Shiva shrines."
+        },
+        {
+          "time": "11:30 – 12:30",
+          "title": "Lunch",
+          "text": ""
+        },
+        {
+          "time": "12:30 – 17:30",
+          "title": "Drive to Bhadrachalam",
+          "text": ""
+        },
+        {
+          "time": "17:30 – 20:30",
+          "title": "Bhadrachalam Sri Rama Temple",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Bhadrachalam → Dwarka Tirumala → Draksharama → Kakinada",
+      "subtitle": "Overnight: Kakinada",
+      "intro": "",
+      "activities": [
+        {
+          "time": "07:00 – 10:30",
+          "title": "Drive to Dwarka Tirumala",
+          "text": ""
+        },
+        {
+          "time": "10:30 – 13:30",
+          "title": "Dwarka Tirumala Temple",
+          "text": "Known as “Chinna Tirupati”."
+        },
+        {
+          "time": "13:30 – 14:30",
+          "title": "Lunch",
+          "text": ""
+        },
+        {
+          "time": "17:30 – 20:00",
+          "title": "Draksharama Bhimeswara Swamy Temple",
+          "text": "Another of the Pancharama shrines."
+        },
+        {
+          "time": "21:00 – 22:00",
+          "title": "Dinner & overnight stay",
+          "text": "Kakinada."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Kakinada → Annavaram → Visakhapatnam",
+      "subtitle": "Hilltop shrine · Overnight: Visakhapatnam",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Annavaram Satyanarayana Swamy Temple",
+          "text": "Hilltop temple on Ratnagiri hill."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive to Visakhapatnam",
+          "text": "Lunch en route."
+        },
+        {
+          "time": "Evening",
+          "title": "RK Beach",
+          "text": "Evening by the sea. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Visakhapatnam | Simhachalam",
+      "subtitle": "Overnight: Visakhapatnam",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Simhachalam Varaha Lakshmi Narasimha Temple",
+          "text": "Hilltop temple with Kalinga-style architecture."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Kailasagiri",
+          "text": "Hilltop park with views over the city and coast."
+        },
+        {
+          "time": "Evening",
+          "title": "At leisure",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Departure from Visakhapatnam",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Check-out",
+          "text": "Drop-off at Visakhapatnam airport or railway station."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/durgamma-temple-636x426.webp",
+      "caption": "Sacred Andhra Pradesh",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/andhra-pradesh-durgamma-temple-636x426.webp",
+      "caption": "Kanaka Durga Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/andhra-pradesh-bhadrachalam-sri-rama-temple-636x426.webp",
+      "caption": "Bhadrachalam",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/andhra-pradesh-amararama-temple-636x426.webp",
+      "caption": "Amararama",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/andhra-pradesh-dwarka-tirumala-636x426.webp",
+      "caption": "Dwarka Tirumala",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/andhra-pradeshdraksharama-bhimeswara-swamy-temple-636x426.webp",
+      "caption": "Draksharama",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "Some shrines involve steps or hill climbs. Tell us about mobility needs and we’ll plan accordingly."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March offers pleasant weather. Festival dates may affect crowds and darshan times."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts at Vijayawada Airport on Day 1 and ends in Visakhapatnam."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

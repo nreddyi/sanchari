@@ -1,0 +1,393 @@
+{
+  "slug": "everest-base-camp",
+  "order": 12,
+  "title": "Everest Base Camp & Kala Patthar Trek",
+  "short_name": "Everest Base Camp Trek",
+  "category": "adventure",
+  "region": "Nepal",
+  "region_key": "nepal",
+  "zone": "",
+  "travel_styles": [],
+  "featured": true,
+  "badge": "Anmish Adventures",
+  "days": 15,
+  "nights": 14,
+  "price": 217500,
+  "route": "Kathmandu → Everest Base Camp",
+  "card_points": [
+    "Everest Base Camp (5,486 m) & Kala Patthar",
+    "Tengboche Monastery",
+    "Flights, guides & meals on trek"
+  ],
+  "stats": [
+    {
+      "icon": "peak",
+      "value": "5,545 m",
+      "label": "Highest point"
+    },
+    {
+      "icon": "cal",
+      "value": "15",
+      "label": "Days"
+    },
+    {
+      "icon": "pin",
+      "value": "Nepal",
+      "label": "Khumbu region"
+    },
+    {
+      "icon": "user",
+      "value": "Guided",
+      "label": "Expert team"
+    },
+    {
+      "icon": "shield",
+      "value": "Insured",
+      "label": "Medical & evacuation"
+    }
+  ],
+  "overview": [
+    "A classic trek through the Khumbu to Everest Base Camp and the summit of Kala Patthar — passing through rhododendron forests, Sherpa villages and high glacial terrain, with views of Everest, Lhotse, Nuptse and Ama Dablam.",
+    "The itinerary includes two acclimatisation days, a visit to Tengboche Monastery and a sunrise climb of Kala Patthar. Experienced guides, porters, meals on the trek and high-altitude insurance are included. The itinerary is indicative and may change with weather and trail conditions."
+  ],
+  "highlights": [
+    {
+      "title": "Everest Base Camp",
+      "text": "Stand at 5,486 m beside the Khumbu Icefall"
+    },
+    {
+      "title": "Kala Patthar",
+      "text": "Sunrise over Everest from 5,545 m"
+    },
+    {
+      "title": "Tengboche",
+      "text": "Prayer ceremony at the Khumbu’s great monastery"
+    },
+    {
+      "title": "Namche Bazaar",
+      "text": "The Sherpa capital and acclimatisation hub"
+    }
+  ],
+  "stops": [
+    "Kathmandu",
+    "Lukla",
+    "Phakding",
+    "Namche",
+    "Deboche",
+    "Dingboche",
+    "Lobuche",
+    "Gorakshep",
+    "EBC",
+    "Kala Patthar"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival in Kathmandu",
+      "subtitle": "Briefing · Drive to Ramechhap",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Airport pick-up & check-in",
+          "text": "Trek briefing and equipment check."
+        },
+        {
+          "time": "Evening",
+          "title": "Drive to Ramechhap",
+          "text": "For the early flight to Lukla."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Fly to Lukla (2,800 m) → Trek to Phakding (2,610 m)",
+      "subtitle": "3–4 hours trekking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Flight to Lukla",
+          "text": "From Ramechhap (Manthali) airport."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Trek to Phakding",
+          "text": "A gentle first walk along the Dudh Kosi."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Phakding → Namche Bazaar (3,450 m)",
+      "subtitle": "5–6 hours trekking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Trek along the Dudh Kosi",
+          "text": "Cross two suspension bridges, then a steep two-hour climb to Namche."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Acclimatisation day in Namche Bazaar",
+      "subtitle": "3,450 m",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Hike to Everest View point",
+          "text": "First views of Everest."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Explore Namche",
+          "text": "Rest and local sightseeing."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Namche → Deboche (3,820 m)",
+      "subtitle": "4–5 hours trekking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Trek to Tengboche",
+          "text": "Visit the monastery and attend a prayer ceremony, then continue to Deboche."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Deboche → Dingboche (4,260 m)",
+      "subtitle": "4–5 hours trekking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Into the Imja Valley",
+          "text": "Past chortens and mani walls."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Acclimatisation day in Dingboche",
+      "subtitle": "4,260 m",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Hike up Nagarjuna Hill",
+          "text": "Panoramic mountain views, then rest."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Dingboche → Lobuche (4,930 m)",
+      "subtitle": "4–5 hours trekking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Via Pheriche and Dugla",
+          "text": "Trek beside the Khumbu Glacier."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Lobuche → Everest Base Camp (5,486 m) → Gorakshep (5,140 m)",
+      "subtitle": "7–8 hours trekking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Trek to Gorakshep",
+          "text": "Lunch at Gorakshep."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Everest Base Camp",
+          "text": "Photos at base camp beside the Khumbu Icefall, then return to Gorakshep."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Kala Patthar (5,545 m) sunrise → Pheriche",
+      "subtitle": "Summit day",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Pre-dawn",
+          "title": "Climb Kala Patthar",
+          "text": "Sunrise over Everest."
+        },
+        {
+          "time": "Day",
+          "title": "Return & descend",
+          "text": "Back to Gorakshep for breakfast, then descend to Pheriche."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Pheriche → Namche Bazaar",
+      "subtitle": "Descent",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Trek back to Namche",
+          "text": "Time for souvenir shopping."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Namche → Lukla",
+      "subtitle": "Final day of trekking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Evening",
+          "title": "Farewell dinner",
+          "text": "With the guides and porters."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Fly to Kathmandu",
+      "subtitle": "Weather dependent",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Flight to Kathmandu or Ramechhap",
+          "text": "Celebration dinner in Kathmandu."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Kathmandu",
+      "subtitle": "Buffer day",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Weather backup or leisure",
+          "text": "Half-day sightseeing if the buffer is not needed."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Departure",
+      "subtitle": "Trek ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Transfer to Kathmandu airport",
+          "text": ""
+        }
+      ],
+      "draft": false
+    }
+  ],
+  "inclusions": [
+    "Round-trip flights Hyderabad – Kathmandu",
+    "Airport transfers in Kathmandu",
+    "3 nights in 3-star hotels in Kathmandu (B&B)",
+    "Transfer to Ramechhap & domestic flights to Lukla",
+    "One porter per two trekkers",
+    "English-speaking guides (3 per 10 trekkers)",
+    "All meals on the trek, boiled water & hot drinks",
+    "First aid, emergency oxygen & communication devices",
+    "Staff wages & insurance",
+    "High-altitude, medical & evacuation insurance",
+    "EBC trek certificate"
+  ],
+  "exclusions": [
+    "Personal clothing & trekking equipment",
+    "Personal expenses (laundry, phone, internet, drinks)",
+    "Costs from weather changes or unforeseen events",
+    "Tips for guides & porters",
+    "Nepal visa fees for non-Indian passport holders"
+  ],
+  "gallery": [
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mt-everest-1-636x426.webp",
+      "caption": "Everest Base Camp",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mt-everest-2-636x426.webp",
+      "caption": "Khumbu Region",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mt-everest-3-636x426.webp",
+      "caption": "Khumbu Region",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mt-everest-4-636x426.webp",
+      "caption": "Khumbu Region",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mt-everest-5-636x426.webp",
+      "caption": "Khumbu Region",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/mt-everest-6-636x426.webp",
+      "caption": "Khumbu Region",
+      "kind": "mountain"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Fitness",
+      "text": "Good cardiovascular fitness is essential. Start a training plan of walking, stair climbs and cardio at least 8–12 weeks before departure."
+    },
+    {
+      "title": "Gear",
+      "text": "A detailed gear list is shared on booking. Personal trekking and mountaineering gear can be rented on request."
+    },
+    {
+      "title": "Altitude",
+      "text": "The itinerary includes acclimatisation days. Guides monitor every trekker and the plan may change for safety."
+    },
+    {
+      "title": "Documents",
+      "text": "A valid passport, visa where required, and medical and evacuation insurance details are needed before travel."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the expedition start and end?",
+      "answer": "The trek starts and ends in Kathmandu, with flights from Hyderabad included."
+    },
+    {
+      "question": "Do I need prior trekking experience?",
+      "answer": "Prior multi-day trekking experience is recommended. Our team will talk you through fitness preparation before you book."
+    },
+    {
+      "question": "What happens if the weather turns?",
+      "answer": "Buffer and reserve days are built in. Final decisions on summit attempts are made by the expedition leaders for everyone’s safety."
+    },
+    {
+      "question": "Who leads the expedition?",
+      "answer": "Adventure journeys are run with Anmish Adventures, led by mountaineer Anmish Varma, with experienced local guides and support staff."
+    }
+  ]
+}

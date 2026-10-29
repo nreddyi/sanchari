@@ -1,0 +1,293 @@
+{
+  "slug": "kilimanjaro-expedition",
+  "order": 13,
+  "title": "Kilimanjaro Expedition via the Marangu Route",
+  "short_name": "Kilimanjaro Expedition",
+  "category": "adventure",
+  "region": "Tanzania",
+  "region_key": "tanzania",
+  "zone": "",
+  "travel_styles": [],
+  "featured": true,
+  "badge": "Anmish Adventures",
+  "days": 9,
+  "nights": 8,
+  "price": 119699,
+  "route": "Moshi → Uhuru Peak",
+  "card_points": [
+    "Uhuru Peak (5,895 m), Africa’s highest point",
+    "Hut stays on the Marangu route",
+    "Park fees, crew & meals included"
+  ],
+  "stats": [
+    {
+      "icon": "peak",
+      "value": "5,895 m",
+      "label": "Uhuru Peak"
+    },
+    {
+      "icon": "cal",
+      "value": "9",
+      "label": "Days"
+    },
+    {
+      "icon": "pin",
+      "value": "Tanzania",
+      "label": "Kilimanjaro NP"
+    },
+    {
+      "icon": "user",
+      "value": "Guided",
+      "label": "Expert crew"
+    },
+    {
+      "icon": "shield",
+      "value": "Insured",
+      "label": "Trip insurance"
+    }
+  ],
+  "overview": [
+    "Climb Africa’s highest mountain by the Marangu route — through tropical rainforest and alpine moorland to the volcanic scree of Kibo, reaching Gillman’s Point and Uhuru Peak at 5,895 m for sunrise on the crater rim.",
+    "The route uses mountain huts, with an acclimatisation day at Horombo and a buffer day for weather. Park fees, camping equipment, oxygen, meals on the mountain and crew are included."
+  ],
+  "highlights": [
+    {
+      "title": "Uhuru Peak",
+      "text": "The summit of Kilimanjaro at 5,895 m"
+    },
+    {
+      "title": "Gillman’s Point",
+      "text": "Sunrise on the crater rim at 5,685 m"
+    },
+    {
+      "title": "Rainforest to moorland",
+      "text": "Five climate zones in a single climb"
+    },
+    {
+      "title": "Zebra Rocks",
+      "text": "Acclimatisation walk with views of Mawenzi"
+    }
+  ],
+  "stops": [
+    "Moshi",
+    "Marangu Gate",
+    "Mandara Hut",
+    "Horombo Hut",
+    "Kibo Hut",
+    "Uhuru Peak"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival at Kilimanjaro International Airport",
+      "subtitle": "Overnight: Moshi",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Airport reception",
+          "text": "Transfer to the hotel in Moshi."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Marangu Gate → Mandara Hut (2,700 m)",
+      "subtitle": "5–6 hours walking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Through tropical rainforest",
+          "text": "Full board on the mountain."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Mandara Hut → Horombo Hut (3,720 m)",
+      "subtitle": "4–5 hours walking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Forest to moorland",
+          "text": "Views of Kibo and Mawenzi in clear weather."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Acclimatisation day at Horombo",
+      "subtitle": "3,720 m",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Walk towards Mawenzi Hut",
+          "text": "Passing Zebra Rocks, then return to Horombo."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Horombo Hut → Kibo Hut (4,700 m)",
+      "subtitle": "6–7 hours walking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Across the saddle",
+          "text": "Gradual climb between Mawenzi and Kibo. There is no running water at Kibo Hut."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Summit day: Uhuru Peak (5,895 m) → Horombo Hut",
+      "subtitle": "The big day",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Before midnight",
+          "title": "Summit push",
+          "text": "Over volcanic scree to Gillman’s Point (5,685 m)."
+        },
+        {
+          "time": "Sunrise",
+          "title": "Crater rim & Uhuru Peak",
+          "text": "The highest point in Africa."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Descend to Horombo",
+          "text": ""
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Horombo Hut → Marangu Gate",
+      "subtitle": "5–6 hours walking",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Descent via Mandara Hut",
+          "text": "Summit certificates presented, then transfer to the hotel."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Buffer day",
+      "subtitle": "Reserve",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Reserve for weather",
+          "text": "Held back in case of harsh weather or other delays."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Departure",
+      "subtitle": "Expedition ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Transfer to the airport",
+          "text": "After breakfast."
+        }
+      ],
+      "draft": false
+    }
+  ],
+  "inclusions": [
+    "Airport transfers (arrival & departure)",
+    "Hotel–gate transfers for clients & crew",
+    "2 nights hotel with breakfast",
+    "Park & camping fees",
+    "Camping equipment",
+    "Portable toilets & oxygen cylinders",
+    "3 meals a day on the mountain",
+    "Crew salaries",
+    "Trip insurance"
+  ],
+  "exclusions": [
+    "Flights",
+    "Personal clothing & equipment",
+    "Expenses not in the itinerary",
+    "Costs from unexpected weather changes"
+  ],
+  "gallery": [
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/kilimanjaro--636x426.webp",
+      "caption": "Kilimanjaro",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/kilimanjaro-1-636x426.webp",
+      "caption": "Marangu Route",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/kilimanjaro-2-636x426.webp",
+      "caption": "Marangu Route",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/kilimanjaro-3-636x426.webp",
+      "caption": "Marangu Route",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/kilimanjaro-4-636x426.webp",
+      "caption": "Marangu Route",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/09/kilimanjaro-5-636x426.webp",
+      "caption": "Marangu Route",
+      "kind": "mountain"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Fitness",
+      "text": "Good cardiovascular fitness is essential. Start a training plan of walking, stair climbs and cardio at least 8–12 weeks before departure."
+    },
+    {
+      "title": "Gear",
+      "text": "A detailed gear list is shared on booking. Personal trekking and mountaineering gear can be rented on request."
+    },
+    {
+      "title": "Altitude",
+      "text": "The itinerary includes acclimatisation days. Guides monitor every trekker and the plan may change for safety."
+    },
+    {
+      "title": "Documents",
+      "text": "A valid passport, visa where required, and medical and evacuation insurance details are needed before travel."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the expedition start and end?",
+      "answer": "The expedition starts and ends at Kilimanjaro International Airport, Tanzania. Flights are not included."
+    },
+    {
+      "question": "Do I need prior trekking experience?",
+      "answer": "Prior multi-day trekking experience is recommended. Our team will talk you through fitness preparation before you book."
+    },
+    {
+      "question": "What happens if the weather turns?",
+      "answer": "Buffer and reserve days are built in. Final decisions on summit attempts are made by the expedition leaders for everyone’s safety."
+    },
+    {
+      "question": "Who leads the expedition?",
+      "answer": "Adventure journeys are run with Anmish Adventures, led by mountaineer Anmish Varma, with experienced local guides and support staff."
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "slug": "char-dham-yatra",
+  "order": 1,
+  "title": "Char Dham Yatra: 12 Days to Yamunotri, Gangotri, Kedarnath & Badrinath",
+  "short_name": "Char Dham Yatra",
+  "category": "temple",
+  "region": "Uttarakhand",
+  "region_key": "uttarakhand",
+  "zone": "north",
+  "travel_styles": [
+    "group"
+  ],
+  "featured": true,
+  "badge": "Seasonal",
+  "days": 12,
+  "nights": 11,
+  "price": 38500,
+  "route": "Haridwar → Rishikesh",
+  "card_points": [
+    "All four Himalayan dhams in one journey",
+    "Treks to Yamunotri & Kedarnath, with pony and helicopter options",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "4",
+      "label": "Himalayan dhams"
+    },
+    {
+      "icon": "peak",
+      "value": "3,583 m",
+      "label": "Kedarnath"
+    },
+    {
+      "icon": "map",
+      "value": "2",
+      "label": "Treks on the route"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "The Char Dham Yatra is one of Hinduism’s most revered pilgrimages: four shrines high in the Garhwal Himalaya, at the sources of the Yamuna and the Ganga, the Jyotirlinga of Kedarnath and the abode of Lord Vishnu at Badrinath.",
+    "This twelve-day journey starts and ends on the Ganga at Haridwar and Rishikesh, with a private vehicle, a tour manager, all meals and stays near each dham. The route is long and mountainous, so we pace it with early starts, rest stops and time to acclimatise."
+  ],
+  "highlights": [
+    {
+      "title": "Yamunotri",
+      "text": "Source of the Yamuna, reached by a trek from Janki Chatti"
+    },
+    {
+      "title": "Gangotri",
+      "text": "Temple of Goddess Ganga on the Bhagirathi river"
+    },
+    {
+      "title": "Kedarnath",
+      "text": "Jyotirlinga temple set below snow peaks at 3,583 m"
+    },
+    {
+      "title": "Badrinath",
+      "text": "Shrine of Lord Badri Vishal on the Alaknanda"
+    }
+  ],
+  "stops": [
+    "Haridwar",
+    "Barkot",
+    "Yamunotri",
+    "Uttarkashi",
+    "Gangotri",
+    "Guptkashi",
+    "Kedarnath",
+    "Badrinath",
+    "Devprayag",
+    "Rishikesh"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival in Haridwar",
+      "subtitle": "Ganga Aarti · Overnight: Haridwar",
+      "intro": "Arrive in Haridwar by afternoon and check in.",
+      "activities": [
+        {
+          "time": "Evening",
+          "title": "Ganga Aarti at Har Ki Pauri",
+          "text": "The evening aarti on the ghats of the Ganga."
+        },
+        {
+          "time": "Night",
+          "title": "Yatra briefing & dinner",
+          "text": "Your tour manager walks you through the route ahead."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Haridwar → Barkot",
+      "subtitle": "Into the mountains · Overnight: Barkot",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Barkot",
+          "text": "Via Dehradun and Mussoorie, with views of the Yamuna valley."
+        },
+        {
+          "time": "Evening",
+          "title": "Check-in & rest",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Barkot → Yamunotri → Barkot",
+      "subtitle": "First dham · Overnight: Barkot",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Early morning",
+          "title": "Drive to Janki Chatti",
+          "text": "Start point for the Yamunotri trek."
+        },
+        {
+          "time": "Morning",
+          "title": "Trek to Yamunotri",
+          "text": "About 6 km each way; ponies and palkis are available."
+        },
+        {
+          "time": "Midday",
+          "title": "Yamunotri Temple & Surya Kund",
+          "text": "Darshan and the hot spring where rice is cooked as prasad."
+        },
+        {
+          "time": "Evening",
+          "title": "Return to Barkot",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Barkot → Uttarkashi",
+      "subtitle": "Valley drive · Overnight: Uttarkashi",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Uttarkashi",
+          "text": "Along the Bhagirathi valley."
+        },
+        {
+          "time": "Evening",
+          "title": "Kashi Vishwanath Temple, Uttarkashi",
+          "text": "Evening darshan. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Uttarkashi → Gangotri → Uttarkashi",
+      "subtitle": "Second dham · Overnight: Uttarkashi",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Gangotri",
+          "text": "Through Harsil’s apple orchards and deodar forests."
+        },
+        {
+          "time": "Midday",
+          "title": "Gangotri Temple",
+          "text": "Darshan and a holy dip in the Bhagirathi."
+        },
+        {
+          "time": "Evening",
+          "title": "Return to Uttarkashi",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Uttarkashi → Guptkashi",
+      "subtitle": "Long mountain drive · Overnight: Guptkashi",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Drive to Guptkashi",
+          "text": "Via Tehri, along the Mandakini valley."
+        },
+        {
+          "time": "Evening",
+          "title": "Ardhanareeshwar Temple (optional)",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Guptkashi → Gaurikund → Kedarnath",
+      "subtitle": "Third dham · Overnight: Kedarnath",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Early morning",
+          "title": "Drive to Sonprayag & shuttle to Gaurikund",
+          "text": ""
+        },
+        {
+          "time": "Day",
+          "title": "Trek to Kedarnath",
+          "text": "About 16 km; ponies, palkis and helicopter services are available."
+        },
+        {
+          "time": "Evening",
+          "title": "Evening aarti at Kedarnath",
+          "text": "Dinner and overnight stay near the temple."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Kedarnath → Guptkashi",
+      "subtitle": "Morning darshan · Overnight: Guptkashi",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Early morning",
+          "title": "Kedarnath darshan",
+          "text": "Followed by a visit to the Adi Shankaracharya Samadhi."
+        },
+        {
+          "time": "Day",
+          "title": "Trek down to Gaurikund",
+          "text": "Then drive back to Guptkashi. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Guptkashi → Badrinath",
+      "subtitle": "Fourth dham · Overnight: Badrinath",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Day",
+          "title": "Drive to Badrinath",
+          "text": "Via Rudraprayag and Joshimath."
+        },
+        {
+          "time": "Evening",
+          "title": "Badrinath Temple darshan",
+          "text": "After a dip in Tapt Kund. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Badrinath → Mana → Rudraprayag",
+      "subtitle": "Mana village · Overnight: Rudraprayag",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Mana village",
+          "text": "Vyas Gufa, Ganesh Gufa and Bhim Pul near the Saraswati river."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Drive to Rudraprayag",
+          "text": "At the confluence of the Alaknanda and Mandakini. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Rudraprayag → Devprayag → Rishikesh",
+      "subtitle": "Birth of the Ganga · Overnight: Rishikesh",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Devprayag",
+          "text": "Where the Alaknanda and Bhagirathi meet to form the Ganga."
+        },
+        {
+          "time": "Evening",
+          "title": "Ganga Aarti at Triveni Ghat, Rishikesh",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Rishikesh → Haridwar",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Rishikesh at leisure",
+          "text": "Then drop-off at Haridwar railway station or Dehradun airport."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private vehicle suited to hill roads",
+    "Breakfast, lunch & dinner",
+    "Hotel & guesthouse accommodation (11 nights)",
+    "Dedicated tour manager",
+    "Yatra registration support"
+  ],
+  "exclusions": [
+    "Flights or trains to Haridwar",
+    "Ponies, palkis & helicopter tickets",
+    "Special puja & darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kedarnath_Temple_with_Snow_Covered_Mountains_in_Background.jpg?width=1200",
+      "caption": "Char Dham Yatra",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Majestic_and_Serene_Kedarnath_temple.jpg?width=1200",
+      "caption": "Kedarnath",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Badrinath_Temple_%2C_Uttarakhand.jpg?width=1200",
+      "caption": "Badrinath",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Gangotri_temple.jpg?width=1200",
+      "caption": "Gangotri",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Yamunotri_temple_and_ashram.jpg?width=1200",
+      "caption": "Yamunotri",
+      "kind": "mountain"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Aarti_at_Har-ki-Pauri%2C_Haridwar.jpg?width=1200",
+      "caption": "Har Ki Pauri, Haridwar",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Fitness & altitude",
+      "text": "The route reaches 3,583 m at Kedarnath and includes two long treks. A basic fitness routine and a doctor’s check-up are advised; ponies, palkis and helicopters can be arranged."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "The temples open around late April or May and close around October–November; exact dates are announced each year. Avoid the peak monsoon weeks of July and August."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts in Haridwar and ends with a drop-off at Haridwar or Dehradun airport."
+    },
+    {
+      "question": "Is the yatra suitable for senior citizens?",
+      "answer": "Yes, with planning. Ponies, palkis and helicopter services can replace the treks. Tell us about any health conditions so we can advise."
+    },
+    {
+      "question": "Is registration required?",
+      "answer": "Yes, the Uttarakhand government requires yatra registration for every pilgrim. Our team helps you complete it."
+    },
+    {
+      "question": "Can I do only Do Dham (Kedarnath & Badrinath)?",
+      "answer": "Yes. We can plan a shorter Do Dham itinerary of around 6–7 days."
+    }
+  ]
+}

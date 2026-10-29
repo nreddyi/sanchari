@@ -1,0 +1,287 @@
+{
+  "slug": "kashi-prayagraj-ayodhya",
+  "order": 2,
+  "title": "Kashi, Prayagraj & Ayodhya: 6 Days on the Sacred Ganga Trail",
+  "short_name": "Kashi, Prayagraj & Ayodhya",
+  "category": "temple",
+  "region": "Uttar Pradesh",
+  "region_key": "uttarpradesh",
+  "zone": "north",
+  "travel_styles": [
+    "individual",
+    "group"
+  ],
+  "featured": true,
+  "badge": "",
+  "days": 6,
+  "nights": 5,
+  "price": 16500,
+  "route": "Varanasi → Ayodhya",
+  "card_points": [
+    "Kashi Vishwanath & the Ganga Aarti",
+    "Triveni Sangam and Ayodhya’s Ram Mandir",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "10",
+      "label": "Sacred sites"
+    },
+    {
+      "icon": "boat",
+      "value": "2",
+      "label": "Boat rides"
+    },
+    {
+      "icon": "pin",
+      "value": "3",
+      "label": "Holy cities"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "Three of India’s holiest cities in one unhurried journey: Varanasi on the Ganga, Prayagraj where three rivers meet, and Ayodhya, birthplace of Lord Rama.",
+    "Watch the evening Ganga Aarti, take a sunrise boat past the ghats, bathe at the Triveni Sangam and offer prayers at the Ram Mandir. A private vehicle, a tour manager, comfortable stays and all meals are included."
+  ],
+  "highlights": [
+    {
+      "title": "Kashi Vishwanath",
+      "text": "The Jyotirlinga temple and its riverfront corridor in Varanasi"
+    },
+    {
+      "title": "Ganga Aarti",
+      "text": "Evening aarti at Dashashwamedh Ghat"
+    },
+    {
+      "title": "Triveni Sangam",
+      "text": "Confluence of the Ganga, Yamuna and the mythical Saraswati"
+    },
+    {
+      "title": "Ayodhya",
+      "text": "Shri Ram Janmabhoomi Mandir and Hanuman Garhi"
+    }
+  ],
+  "stops": [
+    "Varanasi",
+    "Sarnath",
+    "Prayagraj",
+    "Ayodhya"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival in Varanasi",
+      "subtitle": "Ganga Aarti · Overnight: Varanasi",
+      "intro": "Arrive in Varanasi and check in.",
+      "activities": [
+        {
+          "time": "Evening",
+          "title": "Ganga Aarti at Dashashwamedh Ghat",
+          "text": "Watch from the ghats or from a boat on the river."
+        },
+        {
+          "time": "Night",
+          "title": "Dinner & overnight stay",
+          "text": "Varanasi."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Varanasi: ghats & temples",
+      "subtitle": "Kashi Vishwanath · Overnight: Varanasi",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Sunrise",
+          "title": "Boat ride along the ghats",
+          "text": "From Assi to Manikarnika as the city wakes."
+        },
+        {
+          "time": "Morning",
+          "title": "Kashi Vishwanath Temple",
+          "text": "Darshan at the Jyotirlinga, then Annapurna Devi and Kaal Bhairav."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Sarnath",
+          "text": "Where the Buddha gave his first sermon — Dhamek Stupa and the museum."
+        },
+        {
+          "time": "Evening",
+          "title": "Sankat Mochan Hanuman Temple",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Varanasi → Prayagraj",
+      "subtitle": "Triveni Sangam · Overnight: Prayagraj",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Prayagraj",
+          "text": "About three hours."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Boat to the Triveni Sangam",
+          "text": "A holy dip at the meeting point of three rivers."
+        },
+        {
+          "time": "Evening",
+          "title": "Bade Hanuman Temple & Alopi Devi",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Prayagraj → Ayodhya",
+      "subtitle": "Saryu Aarti · Overnight: Ayodhya",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Ayodhya",
+          "text": "About four hours, with a lunch stop."
+        },
+        {
+          "time": "Evening",
+          "title": "Saryu Aarti at Ram ki Paidi",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Ayodhya",
+      "subtitle": "Ram Mandir · Overnight: Ayodhya",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Shri Ram Janmabhoomi Mandir",
+          "text": "Phones and bags are deposited at the lockers before entry."
+        },
+        {
+          "time": "Late morning",
+          "title": "Hanuman Garhi",
+          "text": "Hilltop Hanuman temple reached by steps."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Kanak Bhawan & Dashrath Mahal",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Departure",
+      "subtitle": "Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drop-off",
+          "text": "At Ayodhya airport or Lucknow for your onward journey."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation",
+    "Dedicated tour manager",
+    "Boat rides in Varanasi and Prayagraj"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dashashwamedha_ghat_on_the_Ganga%2C_Varanasi.jpg?width=1200",
+      "caption": "Kashi, Prayagraj & Ayodhya",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Morning_Aarti_of_the_Ganges%2C_ghats_of_Varanasi.jpg?width=1200",
+      "caption": "Ganga Aarti, Varanasi",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kashi_Vishwanath_temple.jpg?width=1200",
+      "caption": "Kashi Vishwanath",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Boat_Pilgrims_Triveni_Sangam_Allahabad_Jan24_A7C_08513.jpg?width=1200",
+      "caption": "Triveni Sangam",
+      "kind": "wellness"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shri_Ram_Janambhoomi_Mandir%2C_Ayodhya_Dham.jpg?width=1200",
+      "caption": "Ram Mandir, Ayodhya",
+      "kind": "temple"
+    },
+    {
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Dhamekh_Stupa_at_Sarnath%2C_Varanasi%2C_India.jpg?width=1200",
+      "caption": "Sarnath",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "Some shrines involve steps or hill climbs. Tell us about mobility needs and we’ll plan accordingly."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March is the most comfortable time. Summers are very hot, and the Magh Mela (January–February) brings large crowds to Prayagraj."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts in Varanasi and ends with a drop-off at Ayodhya airport or Lucknow."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}

@@ -1,0 +1,317 @@
+{
+  "slug": "sacred-telangana",
+  "order": 7,
+  "title": "Sacred Telangana: 5 Days Through Its Most Blessed Temples",
+  "short_name": "Sacred Telangana",
+  "category": "temple",
+  "region": "Telangana",
+  "region_key": "telangana",
+  "zone": "south",
+  "travel_styles": [
+    "group"
+  ],
+  "featured": true,
+  "badge": "",
+  "days": 5,
+  "nights": 4,
+  "price": 7500,
+  "route": "Hyderabad → Ramappa",
+  "card_points": [
+    "The state’s most revered temples in one circuit",
+    "UNESCO-listed Ramappa Temple",
+    "Stays, transport & guide included"
+  ],
+  "stats": [
+    {
+      "icon": "temple",
+      "value": "8",
+      "label": "Sacred temples"
+    },
+    {
+      "icon": "map",
+      "value": "600+ km",
+      "label": "Covered by road"
+    },
+    {
+      "icon": "pin",
+      "value": "7",
+      "label": "Cities visited"
+    },
+    {
+      "icon": "car",
+      "value": "Private",
+      "label": "Transport"
+    },
+    {
+      "icon": "meal",
+      "value": "All meals",
+      "label": "Included"
+    }
+  ],
+  "overview": [
+    "From Charminar’s storied streets in Hyderabad to Ramappa’s UNESCO-listed masterwork, this five-day circuit brings together Telangana’s most revered shrines — hilltop temples, riverside sanctuaries and Kakatiya-era stone masterpieces.",
+    "You’ll travel in a private vehicle with a tour manager, with darshan times planned around temple schedules and all meals taken care of. It’s a well-paced journey for families, senior travellers and first-time pilgrims alike."
+  ],
+  "highlights": [
+    {
+      "title": "Yadadri",
+      "text": "Lakshmi Narasimha cave shrine, rebuilt in white stone and gold"
+    },
+    {
+      "title": "Basar",
+      "text": "Gnana Saraswati Temple on the banks of the Godavari"
+    },
+    {
+      "title": "Kondagattu",
+      "text": "Forest hilltop shrine of Swayambhu Anjaneya Swamy"
+    },
+    {
+      "title": "Ramappa",
+      "text": "13th-century UNESCO World Heritage temple"
+    }
+  ],
+  "stops": [
+    "Hyderabad",
+    "Swarnagiri",
+    "Yadadri",
+    "Nizamabad",
+    "Basar",
+    "Kondagattu",
+    "Karimnagar",
+    "Warangal",
+    "Ramappa"
+  ],
+  "itinerary": [
+    {
+      "title": "Arrival in Hyderabad",
+      "subtitle": "Heritage & local exploration · Overnight: Hyderabad",
+      "intro": "Arrive by 3:00 PM, meet your vehicle and tour manager, and check in. The afternoon is spent exploring the city’s landmarks.",
+      "activities": [
+        {
+          "time": "Afternoon",
+          "title": "Charminar & Laad Bazaar",
+          "text": "The 1591 CE monument and the bangle bazaar around it."
+        },
+        {
+          "time": "Evening",
+          "title": "Hussain Sagar",
+          "text": "The heart-shaped lake (1563 CE) with a monolithic Buddha at its centre."
+        },
+        {
+          "time": "Evening",
+          "title": "Birla Mandir",
+          "text": "White marble Vaishnava temple on a 280-ft granite hill."
+        },
+        {
+          "time": "Night",
+          "title": "Dinner & overnight stay",
+          "text": "Hyderabad."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Hyderabad → Swarnagiri → Yadadri → Nizamabad",
+      "subtitle": "Two hilltop shrines · Overnight: Nizamabad",
+      "intro": "",
+      "activities": [
+        {
+          "time": "08:00 – 10:00",
+          "title": "Drive to Swarnagiri",
+          "text": "The “Golden Mountain” hilltop shrine with views over the Deccan plains."
+        },
+        {
+          "time": "10:00 – 13:00",
+          "title": "Swarnagiri darshan",
+          "text": "Around three hours at the temple."
+        },
+        {
+          "time": "13:00 – 14:00",
+          "title": "Lunch",
+          "text": "Near Swarnagiri."
+        },
+        {
+          "time": "14:30 – 17:30",
+          "title": "Yadadri Lakshmi Narasimha Swamy Temple",
+          "text": "Cave shrine atop a granite hill, recently rebuilt in white stone and gold."
+        },
+        {
+          "time": "17:30 – 21:30",
+          "title": "Drive to Nizamabad",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Nizamabad → Basar → Kondagattu → Karimnagar",
+      "subtitle": "Saraswati & Hanuman shrines · Overnight: Karimnagar",
+      "intro": "",
+      "activities": [
+        {
+          "time": "09:00 – 10:00",
+          "title": "Drive to Basar",
+          "text": "A scenic route along the Godavari."
+        },
+        {
+          "time": "10:00 – 12:00",
+          "title": "Gnana Saraswati Temple",
+          "text": "South India’s best-known Saraswati temple, famed for Vidyarambham ceremonies."
+        },
+        {
+          "time": "12:00 – 13:00",
+          "title": "Lunch",
+          "text": "In Basar."
+        },
+        {
+          "time": "13:00 – 16:30",
+          "title": "Kondagattu Anjaneya Swamy Temple",
+          "text": "Forest hilltop shrine to the self-manifested Hanuman, Jagtial district."
+        },
+        {
+          "time": "18:30 – 21:00",
+          "title": "Drive to Karimnagar",
+          "text": "Dinner and overnight stay."
+        }
+      ],
+      "draft": false
+    },
+    {
+      "title": "Karimnagar → Warangal",
+      "subtitle": "Kakatiya heritage · Overnight: Warangal",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Drive to Warangal",
+          "text": "Former capital of the Kakatiya dynasty."
+        },
+        {
+          "time": "Late morning",
+          "title": "Thousand Pillar Temple",
+          "text": "Star-shaped 12th-century temple with intricately carved pillars."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Warangal Fort",
+          "text": "Stone gateways (Kakatiya Kala Thoranam) and fort ruins."
+        },
+        {
+          "time": "Evening",
+          "title": "Bhadrakali Temple",
+          "text": "Hilltop temple overlooking Bhadrakali Lake. Dinner and overnight stay."
+        }
+      ],
+      "draft": true
+    },
+    {
+      "title": "Warangal → Ramappa → Hyderabad",
+      "subtitle": "UNESCO World Heritage · Tour ends",
+      "intro": "",
+      "activities": [
+        {
+          "time": "Morning",
+          "title": "Ramappa Temple, Palampet",
+          "text": "UNESCO-listed 13th-century Kakatiya temple, renowned for its sculpture."
+        },
+        {
+          "time": "Afternoon",
+          "title": "Lunch & return drive",
+          "text": "Head back towards Hyderabad."
+        },
+        {
+          "time": "Evening",
+          "title": "Drop-off in Hyderabad",
+          "text": "Tour concludes."
+        }
+      ],
+      "draft": true
+    }
+  ],
+  "inclusions": [
+    "Travel as per itinerary",
+    "Private air-conditioned transport",
+    "Breakfast, lunch & dinner",
+    "Hotel accommodation (4 nights)",
+    "Dedicated tour manager"
+  ],
+  "exclusions": [
+    "Departure taxes",
+    "Monument & temple entry fees",
+    "Special darshan tickets",
+    "Personal expenses & tips"
+  ],
+  "gallery": [
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/Telangana-Tourism-636x426.jpg",
+      "caption": "Sacred Telangana",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/telangana-ramappa-temple-636x426.webp",
+      "caption": "Ramappa Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/telangana-yedagiri-gutta-636x426.webp",
+      "caption": "Yadadri",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/telangana-1000-pillars-636x426.webp",
+      "caption": "Thousand Pillar Temple",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/telangana-warangal-fort-636x426.webp",
+      "caption": "Warangal Fort",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/telangana-birla-mandir-636x426.webp",
+      "caption": "Birla Mandir",
+      "kind": "temple"
+    },
+    {
+      "image": "https://darkorchid-pigeon-468832.hostingersite.com/wp-content/uploads/2026/08/telangana-swarna-giri-636x426.webp",
+      "caption": "Swarnagiri",
+      "kind": "temple"
+    }
+  ],
+  "good_to_know": [
+    {
+      "title": "Dress code",
+      "text": "Traditional or modest clothing is recommended at all temples. Footwear is removed before entering."
+    },
+    {
+      "title": "What to carry",
+      "text": "A valid photo ID, comfortable walking shoes, a water bottle and any regular medication."
+    },
+    {
+      "title": "Physical activity",
+      "text": "Some shrines involve steps or hill climbs. Tell us about mobility needs and we’ll plan accordingly."
+    },
+    {
+      "title": "Best time to visit",
+      "text": "October to March offers pleasant weather. Festival dates may affect crowds and darshan times."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where does the tour start and end?",
+      "answer": "The tour starts and ends in Hyderabad. Please plan to arrive by 3:00 PM on Day 1."
+    },
+    {
+      "question": "Can the itinerary be customised?",
+      "answer": "Yes. We can add or skip temples, change hotel categories, or extend your stay. Share your preferences when you enquire."
+    },
+    {
+      "question": "Is this tour suitable for senior citizens?",
+      "answer": "Yes. Travel is by private vehicle and the pace is comfortable. Tell us about any mobility needs in advance."
+    },
+    {
+      "question": "Are special darshan tickets included?",
+      "answer": "No, special darshan tickets are not included, but our team can help you book them where available."
+    }
+  ]
+}
