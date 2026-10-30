@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /src/
+Disallow: /content/
+Disallow: /invoice.html
+Disallow: /account.html
+
+Sitemap: https://nreddyi.github.io/sanchari/sitemap.xml

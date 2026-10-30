@@ -5,12 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sanchari Travel | Temple, Adventure &amp; Wellness Journeys</title>
 <meta name="description" content="Discover the soul of India with curated temple tours, expert-led adventure expeditions and restorative wellness journeys.">
+<link rel="canonical" href="https://nreddyi.github.io/sanchari/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sanchari Travel">
+<meta property="og:title" content="Sanchari Travel | Temple, Adventure &amp; Wellness Journeys">
+<meta property="og:description" content="Discover the soul of India with curated temple tours, expert-led adventure expeditions and restorative wellness journeys.">
+<meta property="og:url" content="https://nreddyi.github.io/sanchari/">
+<meta property="og:image" content="https://nreddyi.github.io/sanchari/assets/photos/hero-s1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#A5310E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/css/style.css?v=202610291144">
+<link rel="stylesheet" href="assets/css/style.css?v=202610300519">
 </head>
 <body class="pg-index">
 
@@ -69,9 +78,9 @@
 </section>
 <div class="search-panel bg-sand"><div class="wrap">
   <form class="search-card home-search" id="homeSearch">
-    <div class="field"><label for="hAct">Activity</label><select id="hAct"><option value="" selected>Select activity</option><option value="temple">Temple Tours</option><option value="adventure">Adventure Tours</option><option value="wellness">Wellness Tours</option></select></div>
-    <div class="field"><label for="hDest">Destination</label><select id="hDest" disabled><option value="all">Select an activity first</option></select></div>
-    <div class="field"><label for="hDate">When</label><input type="month" id="hDate"></div>
+    <div class="field"><label for="hAct">Activity</label><select id="hAct" name="activity"><option value="" selected>Select activity</option><option value="temple">Temple Tours</option><option value="adventure">Adventure Tours</option><option value="wellness">Wellness Tours</option></select></div>
+    <div class="field"><label for="hDest">Destination</label><select id="hDest" name="destination" disabled><option value="all">Select an activity first</option></select></div>
+    <div class="field"><label for="hDate">When</label><input type="month" id="hDate" name="travel_month"></div>
     <button class="btn btn-dark" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>Find Tours</button>
     <p class="hs-err" id="hsErr" role="alert"></p>
   </form>
@@ -89,7 +98,7 @@
 <section class="sec bg-white">
   <div class="wrap">
     <div class="sec-head center"><span class="eyebrow">Discover. Experience. Connect.</span><h2>Explore experiences that inspire every journey</h2><p>Spiritual journeys, adventures and wellness — across India and beyond.</p></div>
-    <div class="cats"><a class="cat" href="temple-tours.html"><img src="assets/img/cat-temple.svg" data-real="assets/photos/cat-temple.webp" alt="Temple Tours"><div class="cat-body"><span>10 journeys</span><h3>Temple Tours</h3><p>Curated pilgrimages to India’s great temples, with comfortable stays and every darshan planned.</p><b>Explore Packages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b></div></a><a class="cat" href="adventure-tours.html"><img src="assets/img/cat-adventure.svg" data-real="assets/photos/cat-adventure.webp" alt="Adventure Tours"><div class="cat-body"><span>3 journeys</span><h3>Adventure Tours</h3><p>Treks and expeditions led by experienced mountaineers, with safety at the centre of every plan.</p><b>Explore Packages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b></div></a><a class="cat" href="wellness-tours.html"><img src="assets/img/cat-wellness.svg" data-real="assets/photos/cat-wellness.webp" alt="Wellness Tours"><div class="cat-body"><span>1 journey</span><h3>Wellness Tours</h3><p>Unhurried journeys combining sacred places, nature and time to rest and reset.</p><b>Explore Packages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b></div></a></div>
+    <div class="cats"><a class="cat" href="temple-tours.html"><img src="assets/photos/cat-temple.webp" alt="Temple Tours" width="480" height="720" loading="lazy" decoding="async"><div class="cat-body"><span>10 journeys</span><h3>Temple Tours</h3><p>Curated pilgrimages to India’s great temples, with comfortable stays and every darshan planned.</p><b>Explore Packages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b></div></a><a class="cat" href="adventure-tours.html"><img src="assets/photos/cat-adventure.webp" alt="Adventure Tours" width="480" height="720" loading="lazy" decoding="async"><div class="cat-body"><span>3 journeys</span><h3>Adventure Tours</h3><p>Treks and expeditions led by experienced mountaineers, with safety at the centre of every plan.</p><b>Explore Packages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b></div></a><a class="cat" href="wellness-tours.html"><img src="assets/photos/cat-wellness.webp" alt="Wellness Tours" width="480" height="720" loading="lazy" decoding="async"><div class="cat-body"><span>1 journey</span><h3>Wellness Tours</h3><p>Unhurried journeys combining sacred places, nature and time to rest and reset.</p><b>Explore Packages <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></b></div></a></div>
   </div>
 </section>
 
@@ -104,59 +113,59 @@
     </div>
     <div class="dx-track" id="dxTrack" tabindex="0" aria-label="Popular destinations">
       <a class="dx" href="temple-tours.html?region=uttarakhand#tours" aria-label="Uttarakhand: 1 tour">
-        <span class="dx-img"><img src="assets/img/uk.svg" data-real="assets/photos/uk.jpg" alt="Uttarakhand"></span>
+        <span class="dx-img"><img src="assets/photos/uk.jpg" alt="Uttarakhand" width="1008" height="673" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Uttarakhand</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=uttarpradesh#tours" aria-label="Uttar Pradesh: 1 tour">
-        <span class="dx-img"><img src="assets/img/up.svg" data-real="assets/photos/up.jpg" alt="Uttar Pradesh"></span>
+        <span class="dx-img"><img src="assets/photos/up.jpg" alt="Uttar Pradesh" width="1280" height="960" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Uttar Pradesh</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="wellness-tours.html?region=karnataka#tours" aria-label="Karnataka: 1 tour">
-        <span class="dx-img"><img src="assets/img/d-karnataka.svg" data-real="assets/photos/d-karnataka.webp" alt="Karnataka"></span>
+        <span class="dx-img"><img src="assets/photos/d-karnataka.webp" alt="Karnataka" width="636" height="636" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Karnataka</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=kerala#tours" aria-label="Kerala: 1 tour">
-        <span class="dx-img"><img src="assets/img/d-kerala.svg" data-real="assets/photos/d-kerala.webp" alt="Kerala"></span>
+        <span class="dx-img"><img src="assets/photos/d-kerala.webp" alt="Kerala" width="636" height="636" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Kerala</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=tamilnadu#tours" aria-label="Tamil Nadu: 1 tour">
-        <span class="dx-img"><img src="assets/img/d-tamilnadu.svg" data-real="assets/photos/d-tamilnadu.jpg" alt="Tamil Nadu"></span>
+        <span class="dx-img"><img src="assets/photos/d-tamilnadu.jpg" alt="Tamil Nadu" width="636" height="636" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Tamil Nadu</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=telangana#tours" aria-label="Telangana: 1 tour">
-        <span class="dx-img"><img src="assets/img/d-telangana.svg" data-real="assets/photos/d-telangana.webp" alt="Telangana"></span>
+        <span class="dx-img"><img src="assets/photos/d-telangana.webp" alt="Telangana" width="552" height="552" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Telangana</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=andhra#tours" aria-label="Andhra Pradesh: 1 tour">
-        <span class="dx-img"><img src="assets/img/d-andhra.svg" data-real="assets/photos/d-andhra.webp" alt="Andhra Pradesh"></span>
+        <span class="dx-img"><img src="assets/photos/d-andhra.webp" alt="Andhra Pradesh" width="636" height="636" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Andhra Pradesh</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=punjab-jk#tours" aria-label="Punjab &amp; J&amp;K: 1 tour">
-        <span class="dx-img"><img src="assets/img/pb.svg" data-real="assets/photos/pb.jpg" alt="Punjab &amp; J&amp;K"></span>
+        <span class="dx-img"><img src="assets/photos/pb.jpg" alt="Punjab &amp; J&amp;K" width="1280" height="851" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Punjab &amp; J&amp;K</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=gujarat#tours" aria-label="Gujarat: 1 tour">
-        <span class="dx-img"><img src="assets/img/gj.svg" data-real="assets/photos/gj.jpg" alt="Gujarat"></span>
+        <span class="dx-img"><img src="assets/photos/gj.jpg" alt="Gujarat" width="1280" height="914" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Gujarat</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=odisha#tours" aria-label="Odisha: 1 tour">
-        <span class="dx-img"><img src="assets/img/od.svg" data-real="assets/photos/od.jpg" alt="Odisha"></span>
+        <span class="dx-img"><img src="assets/photos/od.jpg" alt="Odisha" width="1280" height="857" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Odisha</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="temple-tours.html?region=madhyapradesh#tours" aria-label="Madhya Pradesh: 1 tour">
-        <span class="dx-img"><img src="assets/img/mp.svg" data-real="assets/photos/mp.jpg" alt="Madhya Pradesh"></span>
+        <span class="dx-img"><img src="assets/photos/mp.jpg" alt="Madhya Pradesh" width="1280" height="720" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Madhya Pradesh</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="adventure-tours.html?region=nepal#tours" aria-label="Nepal: 1 tour">
-        <span class="dx-img"><img src="assets/img/ev.svg" data-real="assets/photos/ev.webp" alt="Nepal"></span>
+        <span class="dx-img"><img src="assets/photos/ev.webp" alt="Nepal" width="636" height="426" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Nepal</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="adventure-tours.html?region=tanzania#tours" aria-label="Tanzania: 1 tour">
-        <span class="dx-img"><img src="assets/img/ki.svg" data-real="assets/photos/ki.webp" alt="Tanzania"></span>
+        <span class="dx-img"><img src="assets/photos/ki.webp" alt="Tanzania" width="636" height="426" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Tanzania</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
       <a class="dx" href="adventure-tours.html?region=russia#tours" aria-label="Russia: 1 tour">
-        <span class="dx-img"><img src="assets/img/el.svg" data-real="assets/photos/el.webp" alt="Russia"></span>
+        <span class="dx-img"><img src="assets/photos/el.webp" alt="Russia" width="636" height="426" loading="lazy" decoding="async"></span>
         <span class="dx-info"><b>Russia</b><span class="dx-count"><em>01</em> Tour</span></span>
       </a>
     </div>
@@ -166,7 +175,7 @@
 <section class="yc-sec yc-home bg-white" aria-label="Popular yatras">
   <div class="wrap">
     <div class="yc-head"><div><span class="eyebrow">Popular Yatras</span><h2>Choose your sacred circuit</h2></div><a href="temple-tours.html#tours" class="btn btn-line">View all temple tours</a></div>
-    <div class="yc-grid"><a class="yc" href="temple-tours.html?circuit=char-dham#tours" data-c="char-dham" data-name="Char Dham Yatra"><span class="yc-img"><img src="assets/img/uk-kedarnath.svg" data-real="assets/photos/uk-kedarnath.jpg" alt="Char Dham Yatra"></span><span class="yc-top"><em>01 Tour</em><span>From ₹38,500</span></span><span class="yc-body"><small>Sacred circuit</small><b>Char Dham Yatra</b><span class="yc-d">Yamunotri, Gangotri, Kedarnath &amp; Badrinath — the four Himalayan dhams.</span><span class="yc-go">View tours <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></span></a><a class="yc" href="temple-tours.html?circuit=jyotirlinga#tours" data-c="jyotirlinga" data-name="Jyotirlinga Darshan"><span class="yc-img"><img src="assets/img/mp-mahakal.svg" data-real="assets/photos/mp-mahakal.jpg" alt="Jyotirlinga Darshan"></span><span class="yc-top"><em>04 Tours</em><span>From ₹9,500</span></span><span class="yc-body"><small>Sacred circuit</small><b>Jyotirlinga Darshan</b><span class="yc-d">Kedarnath, Kashi Vishwanath, Mahakaleshwar, Omkareshwar, Somnath &amp; Nageshwar.</span><span class="yc-go">View tours <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></span></a><a class="yc" href="temple-tours.html?circuit=shakti-peeth#tours" data-c="shakti-peeth" data-name="Shakti Peeth Yatra"><span class="yc-img"><img src="assets/img/pb-vaishno.svg" data-real="assets/photos/pb-vaishno.jpg" alt="Shakti Peeth Yatra"></span><span class="yc-top"><em>03 Tours</em><span>From ₹9,500</span></span><span class="yc-body"><small>Sacred circuit</small><b>Shakti Peeth Yatra</b><span class="yc-d">Mata Vaishno Devi, Harsiddhi in Ujjain and Kamakshi Amman in Kanchipuram.</span><span class="yc-go">View tours <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></span></a></div>
+    <div class="yc-grid"><a class="yc" href="temple-tours.html?circuit=char-dham#tours" data-c="char-dham" data-name="Char Dham Yatra"><span class="yc-img"><img src="assets/photos/uk-kedarnath.jpg" alt="Char Dham Yatra" width="1280" height="720" loading="lazy" decoding="async"></span><span class="yc-top"><em>01 Tour</em><span>From ₹38,500</span></span><span class="yc-body"><small>Sacred circuit</small><b>Char Dham Yatra</b><span class="yc-d">Yamunotri, Gangotri, Kedarnath &amp; Badrinath — the four Himalayan dhams.</span><span class="yc-go">View tours <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></span></a><a class="yc" href="temple-tours.html?circuit=jyotirlinga#tours" data-c="jyotirlinga" data-name="Jyotirlinga Darshan"><span class="yc-img"><img src="assets/photos/mp-mahakal.jpg" alt="Jyotirlinga Darshan" width="1280" height="720" loading="lazy" decoding="async"></span><span class="yc-top"><em>04 Tours</em><span>From ₹9,500</span></span><span class="yc-body"><small>Sacred circuit</small><b>Jyotirlinga Darshan</b><span class="yc-d">Kedarnath, Kashi Vishwanath, Mahakaleshwar, Omkareshwar, Somnath &amp; Nageshwar.</span><span class="yc-go">View tours <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></span></a><a class="yc" href="temple-tours.html?circuit=shakti-peeth#tours" data-c="shakti-peeth" data-name="Shakti Peeth Yatra"><span class="yc-img"><img src="assets/photos/pb-vaishno.jpg" alt="Shakti Peeth Yatra" width="819" height="614" loading="lazy" decoding="async"></span><span class="yc-top"><em>03 Tours</em><span>From ₹9,500</span></span><span class="yc-body"><small>Sacred circuit</small><b>Shakti Peeth Yatra</b><span class="yc-d">Mata Vaishno Devi, Harsiddhi in Ujjain and Kamakshi Amman in Kanchipuram.</span><span class="yc-go">View tours <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></span></span></a></div>
   </div>
 </section>
 
@@ -189,23 +198,23 @@
       </div>
       <p class="pj-hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Mon – Fri: 08:00 – 20:00</p>
     </div>
-    <form class="pj-form" data-ok="pj-ok">
+    <form class="pj-form" id="enquiryForm" data-form="enquiry" data-ok="pj-ok">
       <div class="pj-head"><h3 id="pjTitle" data-trip="Plan your journey" data-gen="Send us a message">Plan your journey</h3><span>Takes less than a minute</span></div>
-      <fieldset class="pj-types"><legend>What can we help with?</legend><label><input type="radio" name="pjType" value="temple" checked><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-6h6v6"/></svg>Temple</span></label><label><input type="radio" name="pjType" value="adventure"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>Adventure</span></label><label><input type="radio" name="pjType" value="wellness"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>Wellness</span></label><label><input type="radio" name="pjType" value="custom"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>Custom</span></label><label><input type="radio" name="pjType" value="general"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>General enquiry</span></label></fieldset>
+      <fieldset class="pj-types"><legend>What can we help with?</legend><label><input type="radio" name="trip_type" value="temple" checked><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-6h6v6"/></svg>Temple</span></label><label><input type="radio" name="trip_type" value="adventure"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>Adventure</span></label><label><input type="radio" name="trip_type" value="wellness"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg>Wellness</span></label><label><input type="radio" name="trip_type" value="custom"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>Custom</span></label><label><input type="radio" name="trip_type" value="general"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.2A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>General enquiry</span></label></fieldset>
       <div class="pj-row">
-        <div class="field"><label for="pjName">Full name *</label><input id="pjName" required autocomplete="name" placeholder="Your name"></div>
-        <div class="field"><label for="pjPhone">Phone *</label><input id="pjPhone" type="tel" required autocomplete="tel" placeholder="+91"></div>
+        <div class="field"><label for="pjName">Full name *</label><input id="pjName" name="name" required autocomplete="name" placeholder="Your name"></div>
+        <div class="field"><label for="pjPhone">Phone *</label><input id="pjPhone" name="phone" type="tel" required autocomplete="tel" placeholder="+91"></div>
       </div>
-      <div class="field"><label for="pjEmail">Email<span class="pj-gen-only"> *</span></label><input id="pjEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
+      <div class="field"><label for="pjEmail">Email<span class="pj-gen-only"> *</span></label><input id="pjEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
       <div class="pj-row pj-trip">
-        <div class="field"><label for="pjTour">Tour of interest</label><select id="pjTour"><option>Not sure yet</option><optgroup label="Temple Tours"><option>Char Dham Yatra</option><option>Kashi, Prayagraj &amp; Ayodhya</option><option>Golden Temple &amp; Vaishno Devi</option><option>Ujjain &amp; Omkareshwar Jyotirlinga</option><option>Dwarka &amp; Somnath</option><option>Puri, Konark &amp; Bhubaneswar</option><option>Sacred Telangana</option><option>Tamil Nadu Temple Journey</option><option>Sacred Kerala Sojourn</option><option>Sacred Andhra Pradesh</option></optgroup><optgroup label="Adventure Tours"><option>Everest Base Camp Trek</option><option>Kilimanjaro Expedition</option><option>Mount Elbrus Expedition</option></optgroup><optgroup label="Wellness Tours"><option>Sacred Karnataka</option></optgroup><option>Custom itinerary</option></select></div>
-        <div class="field"><label for="pjWhen">When</label><input id="pjWhen" type="month"></div>
+        <div class="field"><label for="pjTour">Tour of interest</label><select id="pjTour" name="tour"><option>Not sure yet</option><optgroup label="Temple Tours"><option>Char Dham Yatra</option><option>Kashi, Prayagraj &amp; Ayodhya</option><option>Golden Temple &amp; Vaishno Devi</option><option>Ujjain &amp; Omkareshwar Jyotirlinga</option><option>Dwarka &amp; Somnath</option><option>Puri, Konark &amp; Bhubaneswar</option><option>Sacred Telangana</option><option>Tamil Nadu Temple Journey</option><option>Sacred Kerala Sojourn</option><option>Sacred Andhra Pradesh</option></optgroup><optgroup label="Adventure Tours"><option>Everest Base Camp Trek</option><option>Kilimanjaro Expedition</option><option>Mount Elbrus Expedition</option></optgroup><optgroup label="Wellness Tours"><option>Sacred Karnataka</option></optgroup><option>Custom itinerary</option></select></div>
+        <div class="field"><label for="pjWhen">When</label><input id="pjWhen" name="travel_month" type="month"></div>
       </div>
       <div class="pj-row pj-trip">
-        <div class="field"><label for="pjPax">Travellers</label><select id="pjPax"><option>1–2</option><option>3–5</option><option>6–10</option><option>10+ (group)</option></select></div>
-        <div class="field"><label for="pjBudget">Budget per person</label><select id="pjBudget"><option>Flexible</option><option>Under ₹10,000</option><option>₹10,000 – ₹25,000</option><option>₹25,000 – ₹1,00,000</option><option>Above ₹1,00,000</option></select></div>
+        <div class="field"><label for="pjPax">Travellers</label><select id="pjPax" name="travellers"><option>1–2</option><option>3–5</option><option>6–10</option><option>10+ (group)</option></select></div>
+        <div class="field"><label for="pjBudget">Budget per person</label><select id="pjBudget" name="budget"><option>Flexible</option><option>Under ₹10,000</option><option>₹10,000 – ₹25,000</option><option>₹25,000 – ₹1,00,000</option><option>Above ₹1,00,000</option></select></div>
       </div>
-      <div class="field"><label for="pjMsg"><span class="pj-trip-only">Anything else?</span><span class="pj-gen-only">Message *</span></label><textarea id="pjMsg" rows="3" placeholder="Places you’d like to include, special requirements…" data-ph-gen="How can we help? Ask us anything — tours, dates, payments, bookings…"></textarea></div>
+      <div class="field"><label for="pjMsg"><span class="pj-trip-only">Anything else?</span><span class="pj-gen-only">Message *</span></label><textarea id="pjMsg" name="message" rows="3" placeholder="Places you’d like to include, special requirements…" data-ph-gen="How can we help? Ask us anything — tours, dates, payments, bookings…"></textarea></div>
       <div class="form-ok" id="pj-ok"><span class="pj-trip-only">Thank you — our travel expert will get back to you shortly.</span><span class="pj-gen-only">Thank you — we’ve received your message and will reply shortly.</span></div>
       <button class="btn btn-gold pj-submit" type="submit"><span class="pj-trip-only">Send My Request</span><span class="pj-gen-only">Send Message</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       <p class="pj-note"><span class="pj-trip-only">By sending this you agree to be contacted about your trip.</span><span class="pj-gen-only">By sending this you agree to be contacted about your enquiry.</span></p>
@@ -218,7 +227,7 @@
     <div class="ex-grid">
       <article class="ex-card">
         <div class="ex-slider" data-slider>
-          <div class="ex-track"><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><img src="assets/img/ev.svg" data-real="assets/photos/ev.webp" alt="Everest Base Camp Trek — photo 1"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><img src="assets/img/ev-2.svg" data-real="assets/photos/ev-2.webp" alt="Everest Base Camp Trek — photo 2"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><img src="assets/img/ev-3.svg" data-real="assets/photos/ev-3.webp" alt="Everest Base Camp Trek — photo 3"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><img src="assets/img/ev-4.svg" data-real="assets/photos/ev-4.webp" alt="Everest Base Camp Trek — photo 4"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><img src="assets/img/ev-5.svg" data-real="assets/photos/ev-5.webp" alt="Everest Base Camp Trek — photo 5"></div></div>
+          <div class="ex-track"><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><img src="assets/photos/ev.webp" alt="Everest Base Camp Trek — photo 1" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><img src="assets/photos/ev-2.webp" alt="Everest Base Camp Trek — photo 2" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><img src="assets/photos/ev-3.webp" alt="Everest Base Camp Trek — photo 3" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><img src="assets/photos/ev-4.webp" alt="Everest Base Camp Trek — photo 4" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><img src="assets/photos/ev-5.webp" alt="Everest Base Camp Trek — photo 5" width="636" height="426" loading="lazy" decoding="async"></div></div>
           <button type="button" class="ex-nav prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
           <button type="button" class="ex-nav next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
           <span class="ex-alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>5,545 m</span>
@@ -238,7 +247,7 @@
       </article>
       <article class="ex-card">
         <div class="ex-slider" data-slider>
-          <div class="ex-track"><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><img src="assets/img/ki.svg" data-real="assets/photos/ki.webp" alt="Kilimanjaro Expedition — photo 1"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><img src="assets/img/ki-1.svg" data-real="assets/photos/ki-1.webp" alt="Kilimanjaro Expedition — photo 2"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><img src="assets/img/ki-2.svg" data-real="assets/photos/ki-2.webp" alt="Kilimanjaro Expedition — photo 3"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><img src="assets/img/ki-3.svg" data-real="assets/photos/ki-3.webp" alt="Kilimanjaro Expedition — photo 4"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><img src="assets/img/ki-4.svg" data-real="assets/photos/ki-4.webp" alt="Kilimanjaro Expedition — photo 5"></div></div>
+          <div class="ex-track"><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><img src="assets/photos/ki.webp" alt="Kilimanjaro Expedition — photo 1" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><img src="assets/photos/ki-1.webp" alt="Kilimanjaro Expedition — photo 2" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><img src="assets/photos/ki-2.webp" alt="Kilimanjaro Expedition — photo 3" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><img src="assets/photos/ki-3.webp" alt="Kilimanjaro Expedition — photo 4" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><img src="assets/photos/ki-4.webp" alt="Kilimanjaro Expedition — photo 5" width="636" height="426" loading="lazy" decoding="async"></div></div>
           <button type="button" class="ex-nav prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
           <button type="button" class="ex-nav next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
           <span class="ex-alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>5,895 m</span>
@@ -258,7 +267,7 @@
       </article>
       <article class="ex-card">
         <div class="ex-slider" data-slider>
-          <div class="ex-track"><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><img src="assets/img/el.svg" data-real="assets/photos/el.webp" alt="Mount Elbrus Expedition — photo 1"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><img src="assets/img/el-1-1.svg" data-real="assets/photos/el-1-1.webp" alt="Mount Elbrus Expedition — photo 2"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><img src="assets/img/el-2.svg" data-real="assets/photos/el-2.webp" alt="Mount Elbrus Expedition — photo 3"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><img src="assets/img/el-3.svg" data-real="assets/photos/el-3.webp" alt="Mount Elbrus Expedition — photo 4"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><img src="assets/img/el-4.svg" data-real="assets/photos/el-4.webp" alt="Mount Elbrus Expedition — photo 5"></div></div>
+          <div class="ex-track"><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><img src="assets/photos/el.webp" alt="Mount Elbrus Expedition — photo 1" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><img src="assets/photos/el-1-1.webp" alt="Mount Elbrus Expedition — photo 2" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><img src="assets/photos/el-2.webp" alt="Mount Elbrus Expedition — photo 3" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><img src="assets/photos/el-3.webp" alt="Mount Elbrus Expedition — photo 4" width="636" height="426" loading="lazy" decoding="async"></div><div class="ex-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><img src="assets/photos/el-4.webp" alt="Mount Elbrus Expedition — photo 5" width="636" height="426" loading="lazy" decoding="async"></div></div>
           <button type="button" class="ex-nav prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></button>
           <button type="button" class="ex-nav next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg></button>
           <span class="ex-alt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>5,642 m</span>
@@ -297,11 +306,11 @@
 <section class="sec bg-white">
   <div class="wrap">
     <div class="sec-top"><div class="sec-head"><span class="eyebrow">From the Blog</span><h2>Travel tips and advice</h2></div><a href="blog.html" class="btn btn-line">View all articles</a></div>
-    <div class="b-grid"><a class="b-card" href="blog-temple-tour-dress-code-packing.html"><div class="b-img"><img src="assets/img/blog-1.svg" data-real="assets/photos/blog-1.jpg" alt="What to Wear and Carry on a South Indian Temple Tour"></div>
+    <div class="b-grid"><a class="b-card" href="blog-temple-tour-dress-code-packing.html"><div class="b-img"><img src="assets/photos/blog-1.jpg" alt="What to Wear and Carry on a South Indian Temple Tour" width="656" height="815" loading="lazy" decoding="async"></div>
       <div class="b-body"><div class="b-meta"><span class="region">Temple Tours</span><span>October 2, 2026</span></div>
-      <h3>What to Wear and Carry on a South Indian Temple Tour</h3><p>Dress codes, footwear, documents and the small things that make long darshan days easier.</p><span class="more">Read article →</span></div></a><a class="b-card" href="blog-first-time-high-altitude-trek.html"><div class="b-img"><img src="assets/img/blog-2.svg" data-real="assets/photos/blog-2.jpg" alt="Preparing for Your First High-Altitude Trek"></div>
+      <h3>What to Wear and Carry on a South Indian Temple Tour</h3><p>Dress codes, footwear, documents and the small things that make long darshan days easier.</p><span class="more">Read article →</span></div></a><a class="b-card" href="blog-first-time-high-altitude-trek.html"><div class="b-img"><img src="assets/photos/blog-2.jpg" alt="Preparing for Your First High-Altitude Trek" width="1200" height="800" loading="lazy" decoding="async"></div>
       <div class="b-body"><div class="b-meta"><span class="region">Adventure</span><span>September 24, 2026</span></div>
-      <h3>Preparing for Your First High-Altitude Trek</h3><p>How to train, what acclimatisation means, and the signs to watch for on the trail.</p><span class="more">Read article →</span></div></a><a class="b-card" href="blog-pilgrimage-with-senior-parents.html"><div class="b-img"><img src="assets/img/blog-3.svg" data-real="assets/photos/blog-3.jpg" alt="Planning a Pilgrimage With Senior Parents"></div>
+      <h3>Preparing for Your First High-Altitude Trek</h3><p>How to train, what acclimatisation means, and the signs to watch for on the trail.</p><span class="more">Read article →</span></div></a><a class="b-card" href="blog-pilgrimage-with-senior-parents.html"><div class="b-img"><img src="assets/photos/blog-3.jpg" alt="Planning a Pilgrimage With Senior Parents" width="933" height="1400" loading="lazy" decoding="async"></div>
       <div class="b-body"><div class="b-meta"><span class="region">Temple Tours</span><span>September 12, 2026</span></div>
       <h3>Planning a Pilgrimage With Senior Parents</h3><p>Pacing, comfort and support that make a temple journey easier for older travellers.</p><span class="more">Read article →</span></div></a></div>
   </div>
@@ -313,7 +322,7 @@
     <div class="cs-grid">
       <div class="cs-video">
         <div class="cs-player">
-          <img src="assets/img/custom.svg" data-real="assets/photos/custom.jpg" alt="Ganga Aarti at Triveni Ghat, Rishikesh">
+          <img src="assets/photos/custom.jpg" alt="Ganga Aarti at Triveni Ghat, Rishikesh" width="1400" height="1050" loading="lazy" decoding="async">
           <video class="cs-vid" autoplay muted loop playsinline preload="auto" poster="assets/photos/custom-video-poster.jpg" aria-label="Video: Ganga Aarti at Triveni Ghat, Rishikesh">
             <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/5/59/Ganga_Aarti_at_Rishikesh.webm/Ganga_Aarti_at_Rishikesh.webm.1080p.vp9.webm" type="video/webm">
             <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/5/59/Ganga_Aarti_at_Rishikesh.webm/Ganga_Aarti_at_Rishikesh.webm.480p.vp9.webm" type="video/webm">
@@ -353,9 +362,9 @@
       <span class="nl-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
       <div><h2 id="nlTitle">Subscribe to our newsletter</h2><p>New yatras, departure dates and travel tips — straight to your inbox.</p></div>
     </div>
-    <form class="nl-form" id="nlForm" novalidate>
+    <form class="nl-form" id="nlForm" data-form="newsletter" novalidate>
       <label for="nlEmail" class="sr-only">Email address</label>
-      <input id="nlEmail" type="email" required autocomplete="email" placeholder="Enter your email address">
+      <input id="nlEmail" name="email" type="email" required autocomplete="email" placeholder="Enter your email address">
       <button class="btn btn-dark" type="submit">Subscribe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
       <p class="nl-msg" id="nlMsg" role="status" aria-live="polite"></p>
     </form>
@@ -401,25 +410,25 @@
         <button type="button" role="tab" id="tab-signup" aria-controls="pane-signup" aria-selected="false" data-tab="signup">Sign Up</button>
       </div>
 
-      <form class="auth-pane" id="pane-login" role="tabpanel" aria-labelledby="tab-login" novalidate>
+      <form class="auth-pane" id="pane-login" data-form="login" aria-labelledby="tab-login" novalidate>
         <p class="auth-lead">Welcome back! Log in to manage your bookings.</p>
-        <div class="field"><label for="lEmail">Email or phone</label><input id="lEmail" required autocomplete="username" placeholder="you@example.com"></div>
-        <div class="field"><label for="lPass">Password</label><div class="pw"><input id="lPass" type="password" required minlength="8" autocomplete="current-password" placeholder="••••••••"><button type="button" class="pw-t" aria-label="Show password" data-pw="lPass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
-        <div class="auth-row"><label class="chk"><input type="checkbox" id="lRem"><span>Remember me</span></label><button type="button" class="auth-link" data-forgot>Forgot password?</button></div>
+        <div class="field"><label for="lEmail">Email or phone</label><input id="lEmail" name="email" required autocomplete="username" placeholder="you@example.com"></div>
+        <div class="field"><label for="lPass">Password</label><div class="pw"><input id="lPass" name="password" type="password" required minlength="8" autocomplete="current-password" placeholder="••••••••"><button type="button" class="pw-t" aria-label="Show password" data-pw="lPass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div>
+        <div class="auth-row"><label class="chk"><input type="checkbox" id="lRem" name="remember"><span>Remember me</span></label><button type="button" class="auth-link" data-forgot>Forgot password?</button></div>
         <p class="auth-err" role="alert"></p>
         <button class="btn btn-gold auth-submit" type="submit">Log In</button>
         <p class="auth-switch">New to Sanchari? <button type="button" class="auth-link" data-tab="signup">Create an account</button></p>
       </form>
 
-      <form class="auth-pane" id="pane-signup" role="tabpanel" aria-labelledby="tab-signup" hidden novalidate>
+      <form class="auth-pane" id="pane-signup" data-form="signup" aria-labelledby="tab-signup" hidden novalidate>
         <p class="auth-lead">Create an account to book faster and save your favourite tours.</p>
         <div class="auth-2">
-          <div class="field"><label for="sName">Full name</label><input id="sName" required autocomplete="name" placeholder="Your name"></div>
-          <div class="field"><label for="sPhone">Phone</label><input id="sPhone" type="tel" required autocomplete="tel" placeholder="+91"></div>
+          <div class="field"><label for="sName">Full name</label><input id="sName" name="name" required autocomplete="name" placeholder="Your name"></div>
+          <div class="field"><label for="sPhone">Phone</label><input id="sPhone" name="phone" type="tel" required autocomplete="tel" placeholder="+91"></div>
         </div>
-        <div class="field"><label for="sEmail">Email</label><input id="sEmail" type="email" required autocomplete="email" placeholder="you@example.com"></div>
-        <div class="auth-2"><div class="field"><label for="sPass">Password</label><div class="pw"><input id="sPass" type="password" required minlength="8" autocomplete="new-password" placeholder="Min. 8 characters"><button type="button" class="pw-t" aria-label="Show password" data-pw="sPass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div><div class="field"><label for="sPass2">Confirm password</label><div class="pw"><input id="sPass2" type="password" required minlength="8" autocomplete="new-password" placeholder="Re-enter password"><button type="button" class="pw-t" aria-label="Show password" data-pw="sPass2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div></div>
-        <label class="chk"><input type="checkbox" id="sTerms" required><span>I agree to the Terms &amp; Privacy Policy</span></label>
+        <div class="field"><label for="sEmail">Email</label><input id="sEmail" name="email" type="email" required autocomplete="email" placeholder="you@example.com"></div>
+        <div class="auth-2"><div class="field"><label for="sPass">Password</label><div class="pw"><input id="sPass" name="password" type="password" required minlength="8" autocomplete="new-password" placeholder="Min. 8 characters"><button type="button" class="pw-t" aria-label="Show password" data-pw="sPass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div><div class="field"><label for="sPass2">Confirm password</label><div class="pw"><input id="sPass2" name="password_confirm" type="password" required minlength="8" autocomplete="new-password" placeholder="Re-enter password"><button type="button" class="pw-t" aria-label="Show password" data-pw="sPass2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></div></div>
+        <label class="chk"><input type="checkbox" id="sTerms" name="accept_terms" required><span>I agree to the Terms &amp; Privacy Policy</span></label>
         <p class="auth-err" role="alert"></p>
         <button class="btn btn-gold auth-submit" type="submit">Create Account</button>
         <p class="auth-switch">Already have an account? <button type="button" class="auth-link" data-tab="login">Log in</button></p>
@@ -434,6 +443,7 @@
     </div>
   </div>
 </div>
-<script src="assets/js/site.js?v=202610291144"></script>
+<script src="assets/js/config.js?v=202610300519"></script>
+<script src="assets/js/site.js?v=202610300519"></script>
 </body>
 </html>

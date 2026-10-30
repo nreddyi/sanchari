@@ -320,7 +320,7 @@ footer ul a:hover{color:var(--gold-2)}
 .slots::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:var(--line)}
 .slots li{position:relative;display:grid;grid-template-columns:110px 1fr;gap:14px;padding:0 0 16px 26px;font-size:14px}
 .slots li::before{content:"";position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:2.5px solid var(--gold)}
-.slots time{font-weight:600;color:var(--gold);font-size:13px;padding-top:1px}
+.slots .slot-t{font-weight:600;color:var(--gold);font-size:13px;padding-top:1px}
 .slots div{color:var(--muted)}
 .slots div b{display:block;color:var(--ink);font-weight:600}
 .ie{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -1880,7 +1880,7 @@ body.no-scroll{overflow:hidden}
 .ac-help small{color:var(--muted)}
 .ac-main{min-width:0}
 .ac-hello{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:22px}
-.ac-hello h1,.ac-ph h1{font-size:clamp(24px,2.6vw,32px);margin:8px 0 6px}
+.ac-hello h1,.ac-ph h1,.ac-ph h2{font-size:clamp(24px,2.6vw,32px);margin:8px 0 6px}
 .ac-hello p,.ac-ph p{margin:0;color:var(--muted)}
 .ac-hello .btn svg{width:16px;height:16px}
 .ac-ph{margin-bottom:20px}
@@ -2265,3 +2265,9 @@ body.mnav-open::after{content:"";position:fixed;inset:0;background:rgba(30,10,4,
   .bp-top .b-meta > span:nth-child(4){display:inline}
 }
 .bp-top h1{max-width:none;text-wrap:wrap}
+
+/* ---------- 404 page ---------- */
+.nf{background:var(--bg)}
+.nf-in{max-width:760px;padding-block:40px;text-align:left}
+.nf-in h1{font-size:clamp(30px,4vw,48px);margin:14px 0 14px;color:var(--navy)}
+.nf-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
