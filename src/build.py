@@ -1,3 +1,4 @@
+import re
 """Static site generator for the Sanchari website.
 Usage: python3 build.py <output dir>"""
 import os, sys, shutil, html
@@ -58,11 +59,28 @@ def ic(name, sw="2"): return f'<svg viewBox="0 0 24 24" fill="none" stroke="curr
 WA_SVG = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.2c-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5 2.5 1 3 .8 3.6.8.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.9L0 24l6.3-1.7a11.8 11.8 0 0 0 5.7 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg>'
 def wa(msg): return "https://wa.me/" + TEL.lstrip("+") + "?text=" + msg.replace(" ", "%20").replace("’", "%27").replace("'", "%27").replace(",", "%2C")
 
-def img(key, alt="", cls=""):
+_DIM = {}
+def _dims(path):
+    if path not in _DIM:
+        try:
+            from PIL import Image
+            with Image.open(os.path.join(os.path.dirname(HERE), path)) as im: _DIM[path] = im.size
+        except Exception:
+            _DIM[path] = None
+    return _DIM[path]
+
+def img(key, alt="", cls="", eager=False):
     real = IM.real_url(key)
-    r = f' data-real="{real}"' if real else ""
     c = f' class="{cls}"' if cls else ""
-    return f'<img src="assets/img/{key}.svg"{r} alt="{E(alt or IM.REG[key][0] or "Sanchari")}"{c}>'
+    a = E(alt or IM.REG[key][0] or "Sanchari")
+    if real and not real.startswith("http"):
+        # photo is stored with the site: load it directly (lazy), with its size to avoid layout jumps
+        d = _dims(real)
+        wh = f' width="{d[0]}" height="{d[1]}"' if d else ""
+        lz = "" if eager else ' loading="lazy"'
+        return f'<img src="{real}" alt="{a}"{wh}{lz} decoding="async"{c}>'
+    r = f' data-real="{real}"' if real else ""
+    return f'<img src="assets/img/{key}.svg"{r} alt="{a}"{c}>'
 
 # ------------------------------------------------------------ layout
 NAV = [("Home", "index.html"), ("About Us", "about-us.html"), ("Temple", "temple-tours.html"),
@@ -88,11 +106,13 @@ def header(active):
 <div class="m-nav" id="mnav">{mitems}<button type="button" class="m-login" data-auth="login">Login / Sign Up</button><a href="contact.html#enquire" class="btn btn-gold">Plan My Trip</a></div>
 '''
 
-SOCIAL = '''<div class="social">
-  <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
-  <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
-  <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.3l-7.2 8.2L22.4 21h-6.6l-5.2-6.8L4.6 21H1.3l7.7-8.8L.9 3h6.8l4.7 6.2L17.8 3zm-1.2 16h1.8L6.5 4.9H4.6L16.6 19z"/></svg></a>
-  <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-3.2.5-4.8s-.1-3.2-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg></a>
+# Social profile links — fill these in (empty = placeholder '#')
+SOCIAL_URLS = {"Facebook": "", "Instagram": "", "X": "", "YouTube": ""}
+SOCIAL = f'''<div class="social">
+  <a href="{SOCIAL_URLS["Facebook"] or "#"}" aria-label="Facebook"{' target="_blank" rel="noopener"' if SOCIAL_URLS["Facebook"] else ""}><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+  <a href="{SOCIAL_URLS["Instagram"] or "#"}" aria-label="Instagram"{' target="_blank" rel="noopener"' if SOCIAL_URLS["Instagram"] else ""}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+  <a href="{SOCIAL_URLS["X"] or "#"}" aria-label="X"{' target="_blank" rel="noopener"' if SOCIAL_URLS["X"] else ""}><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3.3l-7.2 8.2L22.4 21h-6.6l-5.2-6.8L4.6 21H1.3l7.7-8.8L.9 3h6.8l4.7 6.2L17.8 3zm-1.2 16h1.8L6.5 4.9H4.6L16.6 19z"/></svg></a>
+  <a href="{SOCIAL_URLS["YouTube"] or "#"}" aria-label="YouTube"{' target="_blank" rel="noopener"' if SOCIAL_URLS["YouTube"] else ""}><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.4-1.6.5-3.2.5-4.8s-.1-3.2-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg></a>
 </div>'''
 
 def footer(wa_msg="Hi Sanchari, I'd like to plan a trip."):
@@ -103,7 +123,7 @@ def footer(wa_msg="Hi Sanchari, I'd like to plan a trip."):
       <span class="nl-ico">{ic("mail", "1.8")}</span>
       <div><h2 id="nlTitle">Subscribe to our newsletter</h2><p>New yatras, departure dates and travel tips — straight to your inbox.</p></div>
     </div>
-    <form class="nl-form" id="nlForm" novalidate>
+    <form class="nl-form" id="nlForm" data-form="newsletter" novalidate>
       <label for="nlEmail" class="sr-only">Email address</label>
       <input id="nlEmail" type="email" required autocomplete="email" placeholder="Enter your email address">
       <button class="btn btn-dark" type="submit">Subscribe {ic("arrow")}</button>
@@ -152,7 +172,7 @@ AUTH = f'''
         <button type="button" role="tab" id="tab-signup" aria-controls="pane-signup" aria-selected="false" data-tab="signup">Sign Up</button>
       </div>
 
-      <form class="auth-pane" id="pane-login" role="tabpanel" aria-labelledby="tab-login" novalidate>
+      <form class="auth-pane" id="pane-login" data-form="login" aria-labelledby="tab-login" novalidate>
         <p class="auth-lead">Welcome back! Log in to manage your bookings.</p>
         <div class="field"><label for="lEmail">Email or phone</label><input id="lEmail" required autocomplete="username" placeholder="you@example.com"></div>
         {_pw("lPass", "Password", "current-password")}
@@ -162,7 +182,7 @@ AUTH = f'''
         <p class="auth-switch">New to Sanchari? <button type="button" class="auth-link" data-tab="signup">Create an account</button></p>
       </form>
 
-      <form class="auth-pane" id="pane-signup" role="tabpanel" aria-labelledby="tab-signup" hidden novalidate>
+      <form class="auth-pane" id="pane-signup" data-form="signup" aria-labelledby="tab-signup" hidden novalidate>
         <p class="auth-lead">Create an account to book faster and save your favourite tours.</p>
         <div class="auth-2">
           <div class="field"><label for="sName">Full name</label><input id="sName" required autocomplete="name" placeholder="Your name"></div>
@@ -186,7 +206,32 @@ AUTH = f'''
   </div>
 </div>'''
 
-def page(fname, title, desc, active, body, wa_msg=None):
+SITE_URL = os.environ.get("SITE_URL", "https://nreddyi.github.io/sanchari/")
+DEFAULT_OG = "assets/photos/hero-s1.jpg"
+PAGES_BUILT = []
+# Every form field gets a name= the backend can read (id -> name)
+FIELD_NAMES = {
+    "pjName": "name", "pjPhone": "phone", "pjEmail": "email", "pjTour": "tour", "pjWhen": "travel_month",
+    "pjPax": "travellers", "pjBudget": "budget", "pjMsg": "message",
+    "nlEmail": "email",
+    "lEmail": "email", "lPass": "password", "lRem": "remember",
+    "sName": "name", "sPhone": "phone", "sEmail": "email", "sPass": "password", "sPass2": "password_confirm", "sTerms": "accept_terms",
+    "pName": "name", "pPhone": "phone", "pEmail": "email", "pCity": "city", "pNotes": "notes",
+    "sDest": "destination", "sDur": "duration", "sType": "travel_style", "sBudget": "max_budget",
+    "hAct": "activity", "hDest": "destination", "hDate": "travel_month",
+    "bDate": "travel_date", "bName": "name", "bPhone": "phone", "bEmail": "email",
+}
+def add_field_names(doc):
+    def f(m):
+        tag = m.group(0)
+        if " name=" in tag: return tag
+        i = re.search(r'\bid="([^"]+)"', tag)
+        if i and i.group(1) in FIELD_NAMES:
+            return tag.replace(f'id="{i.group(1)}"', f'id="{i.group(1)}" name="{FIELD_NAMES[i.group(1)]}"', 1)
+        return tag
+    return re.sub(r"<(?:input|select|textarea)\b[^>]*>", f, doc)
+
+def page(fname, title, desc, active, body, wa_msg=None, og_image=None, noindex=False):
     doc = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -194,6 +239,15 @@ def page(fname, title, desc, active, body, wa_msg=None):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc)}">
+<link rel="canonical" href="{SITE_URL}{"" if fname == "index.html" else fname}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sanchari Travel">
+<meta property="og:title" content="{E(title)}">
+<meta property="og:description" content="{E(desc)}">
+<meta property="og:url" content="{SITE_URL}{"" if fname == "index.html" else fname}">
+<meta property="og:image" content="{SITE_URL}{og_image or DEFAULT_OG}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#A5310E">{'<meta name="robots" content="noindex">' if noindex else ""}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 {FONTS}
@@ -206,11 +260,14 @@ def page(fname, title, desc, active, body, wa_msg=None):
 {body}
 {footer(wa_msg) if wa_msg else footer()}
 {AUTH}
+<script src="assets/js/config.js?v={VER}"></script>
 <script src="assets/js/site.js?v={VER}"></script>
 </body>
 </html>
 '''
+    doc = add_field_names(doc)
     open(os.path.join(OUT, fname), "w").write(doc)
+    PAGES_BUILT.append((fname, noindex))
 
 def hero(key, crumbs, eyebrow, h1, lead, extra="", cls="page-hero", real=None):
     cr = "".join((f'<a href="{h}">{n}</a><span>/</span>' if h else f'<span>{n}</span>') for n, h in crumbs)
@@ -218,7 +275,7 @@ def hero(key, crumbs, eyebrow, h1, lead, extra="", cls="page-hero", real=None):
     rb = f' data-bg-real="{real}"' if real else ""
     return f'''
 <section class="hero {cls}">
-  <div class="hero-bg" style="background-image:url('assets/img/{key}.svg')"{rb} role="img" aria-label=""></div>
+  <div class="hero-bg" style="background-image:url('assets/img/{key}.svg')"{rb} aria-hidden="true"></div>
   <div class="wrap">
     <div class="crumbs">{cr}</div>
     <span class="eyebrow">{eyebrow}</span>
@@ -376,7 +433,7 @@ def enquiry(*_args, **_kw):
               ("Wellness Tours", [t["short"] for t in TOURS if t["cat"] == "wellness"])]
     opts = "".join(f'<optgroup label="{g}">' + "".join(f"<option>{E(o)}</option>" for o in os_) + "</optgroup>" for g, os_ in groups)
     types = [("temple", "Temple"), ("adventure", "Adventure"), ("wellness", "Wellness"), ("custom", "Custom"), ("general", "General enquiry")]
-    ty = "".join(f'<label><input type="radio" name="pjType" value="{v}"{" checked" if i == 0 else ""}><span>{ic({"temple":"temple","adventure":"peak","wellness":"heart","custom":"sliders","general":"chat"}[v], "1.8")}{n}</span></label>' for i, (v, n) in enumerate(types))
+    ty = "".join(f'<label><input type="radio" name="trip_type" value="{v}"{" checked" if i == 0 else ""}><span>{ic({"temple":"temple","adventure":"peak","wellness":"heart","custom":"sliders","general":"chat"}[v], "1.8")}{n}</span></label>' for i, (v, n) in enumerate(types))
     bg = IM.real_url("hero-wellness")
     return f"""
 <section class="pj" id="enquire">
@@ -398,7 +455,7 @@ def enquiry(*_args, **_kw):
       </div>
       <p class="pj-hours">{ic("clock")}{HOURS}</p>
     </div>
-    <form class="pj-form" data-ok="pj-ok">
+    <form class="pj-form" id="enquiryForm" data-form="enquiry" data-ok="pj-ok">
       <div class="pj-head"><h3 id="pjTitle" data-trip="Plan your journey" data-gen="Send us a message">Plan your journey</h3><span>Takes less than a minute</span></div>
       <fieldset class="pj-types"><legend>What can we help with?</legend>{ty}</fieldset>
       <div class="pj-row">
@@ -583,7 +640,7 @@ def category_page(cat):
     <p class="count"><b id="cnt">{len(tours)}</b> {"tours" if len(tours) != 1 else "tour"} available</p>
     <div class="yc-bar" id="ycBar" hidden><span>Showing <b id="ycName"></b></span><button type="button" id="ycClear">Show all tours ×</button></div>
     <div class="grid grid-{cat}" id="grid">{cards}</div>
-    <div class="empty" id="empty">No tours match these filters. <a href="#" onclick="resetFilters();return false" style="color:var(--gold);font-weight:600">Clear filters</a> or <a href="#enquire" style="color:var(--gold);font-weight:600">ask us for a custom plan</a>.</div>
+    <div class="empty" id="empty">No tours match these filters. <button type="button" class="link-btn" onclick="resetFilters()" style="color:var(--gold);font-weight:600;font-size:inherit;padding:0;background:none;border:0;cursor:pointer;text-decoration:underline">Clear filters</button> or <a href="#enquire" style="color:var(--gold);font-weight:600">ask us for a custom plan</a>.</div>
   </div>
 </section>
 <section class="sec">
@@ -640,7 +697,7 @@ def tour_page(t):
     stops = '<i>→</i>'.join(f"<span>{E(s)}</span>" for s in t["stops"])
     days = ""
     for n, (title, sub, intro, slots, draft) in enumerate(t["itinerary"], 1):
-        sl = "".join(f'<li><time>{E(tm)}</time><div><b>{E(b)}</b>{E(d)}</div></li>' for tm, b, d in slots)
+        sl = "".join(f'<li><span class="slot-t">{E(tm)}</span><div><b>{E(b)}</b>{E(d)}</div></li>' for tm, b, d in slots)
         dc = "<!-- DRAFT: not on the current site; confirm with operations -->" if draft else ""
         days += f'''{dc}
           <details class="day"{" open" if n == 1 else ""}>
@@ -667,15 +724,15 @@ def tour_page(t):
     if len(st) > 1:
         style_pick = f'''<div class="field"><label>Travel style</label>
           <div class="b-style" role="radiogroup" aria-label="Travel style">
-            <label><input type="radio" name="bStyle" value="individual" checked><span>{ic("user")}<b>Individual</b><small>Private / family</small></span></label>
-            <label><input type="radio" name="bStyle" value="group"><span>{ic("users")}<b>Group</b><small>Group departure</small></span></label>
+            <label><input type="radio" name="travel_style" value="individual" checked><span>{ic("user")}<b>Individual</b><small>Private / family</small></span></label>
+            <label><input type="radio" name="travel_style" value="group"><span>{ic("users")}<b>Group</b><small>Group departure</small></span></label>
           </div></div>'''
     else:
         if st == ["individual"]:
-            style_pick = f'<div class="b-fixed">{ic("user")}<span><b>Individual / family</b><small>A private tour for you and your family</small></span></div><input type="hidden" name="bStyleFixed" value="individual">'
+            style_pick = f'<div class="b-fixed">{ic("user")}<span><b>Individual / family</b><small>A private tour for you and your family</small></span></div><input type="hidden" name="travel_style" value="individual">'
         else:
             msg = "This expedition runs as a guided team" if t["cat"] == "adventure" else "Travel with a small group on fixed departure dates"
-            style_pick = f'<div class="b-fixed">{ic("users")}<span><b>Group departure</b><small>{msg}</small></span></div><input type="hidden" name="bStyleFixed" value="group">'
+            style_pick = f'<div class="b-fixed">{ic("users")}<span><b>Group departure</b><small>{msg}</small></span></div><input type="hidden" name="travel_style" value="group">'
     related = [x for x in TOURS if x["cat"] == t["cat"] and x is not t]
     related += [x for x in TOURS if x["cat"] != t["cat"]]
     rel = "".join(card_v(x) for x in related[:3])
@@ -725,7 +782,7 @@ def tour_page(t):
     <aside class="d-aside" id="book">
       <div class="book">
         <div class="book-top"><small>Starting from</small><div class="b-price">{inr(t["price"])} <span>/ person</span></div></div>
-        <form class="book-body" id="bookForm" data-price="{t["price"]}" data-slug="{t["slug"]}">
+        <form class="book-body" id="bookForm" data-form="booking" data-price="{t["price"]}" data-slug="{t["slug"]}">
           {style_pick}
           <div class="field"><label for="bDate">Preferred travel date</label><input type="date" id="bDate" required></div>
           <div class="field"><label for="bName">Lead traveller name</label><input type="text" id="bName" autocomplete="name" placeholder="Full name" required></div>
@@ -756,7 +813,8 @@ def tour_page(t):
 </section>
 <div class="m-book"><div><small>From</small><b>{inr(t["price"])}</b><span>/ person</span></div><a href="#book" class="btn btn-gold">Book Now</a></div>'''
     page(t["slug"] + ".html", f'{t["short"]} – {t["days"]}-Day Tour | Sanchari Travel',
-         f'{t["days"]}-day guided journey, {t["route"]}. From {inr(t["price"])} per person.', cat["nav"], body, wmsg)
+         f'{t["days"]}-day guided journey, {t["route"]}. From {inr(t["price"])} per person.', cat["nav"], body, wmsg,
+         og_image=(lambda u: u if u and not u.startswith("http") else None)(IM.real_url(t["images"][0])))
 
 
 POPULAR = ["tour-sacred-kerala", "tour-tamil-nadu-temple-journey", "tour-everest-base-camp", "tour-char-dham-yatra",
@@ -1556,7 +1614,7 @@ def invoice():
   </div>
 </section>
 <script type="application/json" id="ivData">{data}</script>"""
-    page("invoice.html", "Booking Invoice | Sanchari Travel", "Your Sanchari booking invoice.", "", body)
+    page("invoice.html", "Booking Invoice | Sanchari Travel", "Your Sanchari booking invoice.", "", body, noindex=True)
 
 # ------------------------------------------------------------ my account
 def account():
@@ -1604,19 +1662,19 @@ def account():
         </section>
 
         <section class="ac-pane" id="pane-bookings" data-pane="bookings" hidden>
-          <div class="ac-ph"><h1>My Bookings</h1><p>Every booking you make while logged in appears here, with its invoice.</p></div>
+          <div class="ac-ph"><h2>My Bookings</h2><p>Every booking you make while logged in appears here, with its invoice.</p></div>
           <div class="ac-filter" role="tablist"><button class="on" data-bf="all">All</button><button data-bf="upcoming">Upcoming</button><button data-bf="past">Past</button></div>
           <div id="acBookings" class="ac-blist"></div>
         </section>
 
         <section class="ac-pane" id="pane-wishlist" data-pane="wishlist" hidden>
-          <div class="ac-ph"><h1>Wishlist</h1><p>Tap the heart on any tour to save it here.</p></div>
+          <div class="ac-ph"><h2>Wishlist</h2><p>Tap the heart on any tour to save it here.</p></div>
           <div id="acWish" class="ac-wgrid"></div>
         </section>
 
         <section class="ac-pane" id="pane-profile" data-pane="profile" hidden>
-          <div class="ac-ph"><h1>Profile</h1><p>These details are used to fill in your bookings and invoices.</p></div>
-          <form class="ac-card ac-form" id="acProfile" novalidate>
+          <div class="ac-ph"><h2>Profile</h2><p>These details are used to fill in your bookings and invoices.</p></div>
+          <form class="ac-card ac-form" id="acProfile" data-form="profile" novalidate>
             <div class="ac-2"><div class="field"><label for="pName">Full name</label><input id="pName" autocomplete="name" required></div>
               <div class="field"><label for="pPhone">Phone</label><input id="pPhone" type="tel" autocomplete="tel"></div></div>
             <div class="ac-2"><div class="field"><label for="pEmail">Email</label><input id="pEmail" type="email" autocomplete="email"></div>
@@ -1631,7 +1689,7 @@ def account():
   </div>
 </section>
 <script type="application/json" id="acData">{data}</script>"""
-    page("account.html", "My Account | Sanchari Travel", "Manage your Sanchari bookings, invoices and saved tours.", "", body)
+    page("account.html", "My Account | Sanchari Travel", "Manage your Sanchari bookings, invoices and saved tours.", "", body, noindex=True)
 
 def credits():
     rows = "".join(f'<li><a href="{u}" target="_blank" rel="noopener">{E(c)}</a><span>Wikimedia Commons</span></li>' for c, u in CREDITS)
@@ -1686,18 +1744,44 @@ def legal_pages():
   </article></div></section>'''
         page(fn, f"{title} | Sanchari Travel", intro, "", body)
 
+def not_found():
+    body = f'''
+<section class="sec nf"><div class="wrap nf-in">
+  <span class="eyebrow">Error 404</span>
+  <h1>This page took a different route</h1>
+  <p class="lead-sm">The page you’re looking for may have moved or no longer exists. These will get you back on track:</p>
+  <div class="nf-links">
+    <a class="btn btn-gold" href="index.html">Go to Home</a>
+    <a class="btn btn-line" href="temple-tours.html">Temple Tours</a>
+    <a class="btn btn-line" href="adventure-tours.html">Adventure Tours</a>
+    <a class="btn btn-line" href="wellness-tours.html">Wellness Tours</a>
+    <a class="btn btn-line" href="contact.html">Contact Us</a>
+  </div>
+</div></section>'''
+    page("404.html", "Page not found | Sanchari Travel", "This page could not be found.", "", body, noindex=True)
+
+def site_files():
+    from datetime import date
+    today = date.today().isoformat()
+    urls = "".join(f"  <url><loc>{SITE_URL}{'' if f == 'index.html' else f}</loc><lastmod>{today}</lastmod></url>\n"
+                   for f, ni in sorted(PAGES_BUILT, key=lambda x: (x[0] != "index.html", x[0])) if not ni)
+    open(os.path.join(OUT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "</urlset>\n")
+    open(os.path.join(OUT, "robots.txt"), "w").write(f"User-agent: *\nDisallow: /src/\nDisallow: /content/\nDisallow: /invoice.html\nDisallow: /account.html\n\nSitemap: {SITE_URL}sitemap.xml\n")
+
 # ------------------------------------------------------------ run
 if os.path.exists(OUT): shutil.rmtree(OUT)
 for d in ["assets/css", "assets/js", "assets/img"]: os.makedirs(os.path.join(OUT, d))
 css = open(os.path.join(HERE, "base.css")).read() + open(os.path.join(HERE, "extra.css")).read()
 open(os.path.join(OUT, "assets/css/style.css"), "w").write(css)
 shutil.copy(os.path.join(HERE, "site.js"), os.path.join(OUT, "assets/js/site.js"))
+shutil.copy(os.path.join(HERE, "config.js"), os.path.join(OUT, "assets/js/config.js"))
 for f in ["logo.png", "logo-white.png", "favicon.png", "apple-touch-icon.png"]: shutil.copy(os.path.join(HERE, f), os.path.join(OUT, "assets/img", f))
 if os.path.isdir(os.path.join(HERE, "video")): shutil.copytree(os.path.join(HERE, "video"), os.path.join(OUT, "assets/video"))
 for k in IM.REG: open(os.path.join(OUT, f"assets/img/{k}.svg"), "w").write(IM.svg_for(k))
 _ph = os.path.join(os.path.dirname(HERE), "assets", "photos")
 if os.path.isdir(_ph): shutil.copytree(_ph, os.path.join(OUT, "assets/photos"))
-home(); about(); contact(); blog(); credits(); invoice(); account(); legal_pages()
+home(); about(); contact(); blog(); credits(); invoice(); account(); legal_pages(); not_found()
 for c in CATS: category_page(c)
 for t in TOURS: tour_page(t)
 print("pages:", len([f for f in os.listdir(OUT) if f.endswith(".html")]), "images:", len(IM.REG))
+site_files()

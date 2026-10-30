@@ -1,4 +1,27 @@
 /* Sanchari site scripts */
+/* ---------------------------------------------------------------------------
+   Backend hook. Set window.SANCHARI_API.base in assets/js/config.js (e.g.
+   "https://api.sanchari.travel") and every form is also POSTed as JSON to
+   {base}/{form} — enquiry, newsletter, booking, signup, login, profile.
+   With no base URL the site works as before (browser-only). See BACKEND.md.
+--------------------------------------------------------------------------- */
+window.SAN_FORM_DATA = function (form, extra) {
+  const o = {};
+  if (form) new FormData(form).forEach((v, k) => { if (k in o) o[k] = [].concat(o[k], v); else o[k] = v; });
+  if (form) form.querySelectorAll('input[type="checkbox"][name]').forEach(c => { o[c.name] = c.checked; });
+  return Object.assign(o, extra || {}, { page: location.pathname.split('/').pop() || 'index.html', submitted_at: new Date().toISOString() });
+};
+window.SAN_SEND = function (type, form, extra) {
+  const api = window.SANCHARI_API || {};
+  const data = window.SAN_FORM_DATA(form, extra);
+  if (!api.base) return Promise.resolve({ ok: true, offline: true, data });
+  return fetch(api.base.replace(/\/$/, '') + '/' + type, {
+    method: 'POST', keepalive: true, headers: Object.assign({ 'Content-Type': 'application/json' }, api.headers || {}),
+    credentials: api.credentials || 'omit', body: JSON.stringify(data)
+  }).then(r => r.json().catch(() => ({})).then(j => Object.assign({ ok: r.ok, status: r.status }, j)))
+    .catch(e => { console.warn('Sanchari API: ' + type + ' failed', e); return { ok: false, error: String(e) }; });
+};
+
 /* Account store: user, bookings and wishlist kept in this browser (localStorage).
    Passwords are never stored. Replace with a real backend before taking live payments. */
 window.SAN = (function () {
@@ -68,6 +91,7 @@ window.SAN = (function () {
   // Simple forms: show a thank-you message
   $$('form[data-ok]').forEach(f => f.addEventListener('submit', e => {
     e.preventDefault();
+    SAN_SEND(f.dataset.form || 'enquiry', f);
     const ok = document.getElementById(f.dataset.ok);
     if (ok) ok.style.display = 'block';
     f.reset();
@@ -196,10 +220,11 @@ window.SAN = (function () {
     book.addEventListener('submit', e => {
       e.preventDefault();
       const inv = SAN.newInvoiceNo();
-      const st = book.querySelector('input[name="bStyle"]:checked');
+      const st = book.querySelector('input[type="radio"][name="travel_style"]:checked');
       const q = new URLSearchParams({ tour: book.dataset.slug, date: dt ? dt.value : '', a: pax.a, c: pax.c,
-        style: st ? st.value : ((book.querySelector('input[name="bStyleFixed"]') || {}).value || 'group'), name: ($('#bName') || {}).value || '', phone: ($('#bPhone') || {}).value || '',
+        style: st ? st.value : ((book.querySelector('input[type="hidden"][name="travel_style"]') || {}).value || 'group'), name: ($('#bName') || {}).value || '', phone: ($('#bPhone') || {}).value || '',
         email: ($('#bEmail') || {}).value || '', inv });
+      SAN_SEND('booking', book, { invoice_no: inv, tour: book.dataset.slug, adults: pax.a, children: pax.c, price_per_person: price, total: price * (pax.a + pax.c) });
       SAN.addBooking({ inv, tour: book.dataset.slug, date: q.get('date'), a: pax.a, c: pax.c, style: q.get('style'),
         name: q.get('name'), phone: q.get('phone'), email: q.get('email'), created: new Date().toISOString() });
       if (!SAN.user() && q.get('name')) SAN.setUser({ name: q.get('name'), phone: q.get('phone'), email: q.get('email') });
@@ -288,6 +313,7 @@ window.SAN = (function () {
     if (p.value.length < 8) return err(f, 'Password must be at least 8 characters.', p);
     const id = u.value.trim(), prev = SAN.user() || {}, isMail = id.includes('@');
     const nm = prev.name || (isMail ? id.split('@')[0].replace(/[._-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : 'Traveller');
+    SAN_SEND('login', f);
     SAN.setUser(Object.assign({ name: nm }, isMail ? { email: id } : { phone: id }));
     done('Welcome back, ' + SAN.first(SAN.user()) + '!', 'You’re logged in. Your bookings, invoices and saved tours are in My Account.');
   });
@@ -300,6 +326,7 @@ window.SAN = (function () {
     if (p1.value.length < 8) return err(f, 'Password must be at least 8 characters.', p1);
     if (p1.value !== p2.value) return err(f, 'Passwords don’t match.', p2);
     if (!t.checked) return err(f, 'Please accept the Terms & Privacy Policy.', t);
+    SAN_SEND('signup', f);
     SAN.setUser({ name: n.value.trim(), phone: ph.value.trim(), email: em.value.trim() });
     done('Account created!', 'Welcome to Sanchari, ' + n.value.trim().split(' ')[0] + '. Your account is ready.');
   });
@@ -619,6 +646,7 @@ document.querySelectorAll('[data-slider]').forEach(sl => {
   pf.addEventListener('submit', e => {
     e.preventDefault();
     if (!$i('pName').value.trim()) { $i('pSaved').textContent = 'Please enter your name.'; $i('pName').focus(); return; }
+    SAN_SEND('profile', pf);
     SAN.setUser({ name: $i('pName').value.trim(), phone: $i('pPhone').value.trim(), email: $i('pEmail').value.trim(), city: $i('pCity').value.trim(), notes: $i('pNotes').value.trim() });
     paint(); $i('pSaved').textContent = 'Saved'; setTimeout(() => $i('pSaved').textContent = '', 2500);
   });
@@ -656,12 +684,12 @@ document.querySelectorAll('[data-slider]').forEach(sl => {
 /* Plan your journey: "General enquiry" shows only name, phone, email and message */
 (function(){
   document.querySelectorAll('.pj-form').forEach(function(f){
-    var radios = f.querySelectorAll('input[name="pjType"]');
+    var radios = f.querySelectorAll('input[name="trip_type"]');
     if(!radios.length) return;
     var email = f.querySelector('#pjEmail'), msg = f.querySelector('#pjMsg'), title = f.querySelector('#pjTitle');
     var ph = msg ? msg.getAttribute('placeholder') : '';
     function sync(){
-      var c = f.querySelector('input[name="pjType"]:checked');
+      var c = f.querySelector('input[name="trip_type"]:checked');
       var gen = !!c && c.value === 'general';
       f.classList.toggle('is-general', gen);
       if(email) email.required = gen;
@@ -670,7 +698,7 @@ document.querySelectorAll('[data-slider]').forEach(sl => {
     }
     radios.forEach(function(r){ r.addEventListener('change', sync); });
     var want = new URLSearchParams(location.search).get('type');
-    if(want){ var r0 = f.querySelector('input[name="pjType"][value="'+want.replace(/[^a-z]/g,'')+'"]'); if(r0) r0.checked = true; }
+    if(want){ var r0 = f.querySelector('input[name="trip_type"][value="'+want.replace(/[^a-z]/g,'')+'"]'); if(r0) r0.checked = true; }
     sync();
   });
 })();
@@ -713,6 +741,7 @@ document.querySelectorAll('[data-slider]').forEach(sl => {
     e.preventDefault();
     var v = (inp.value || '').trim();
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){ f.classList.add('is-err'); msg.className='nl-msg err'; msg.textContent='Please enter a valid email address, e.g. name@example.com.'; inp.focus(); return; }
+    SAN_SEND('newsletter', f);
     msg.className='nl-msg ok'; msg.textContent='Thank you! ' + v + ' is subscribed to Sanchari travel updates.';
     inp.value='';
   });

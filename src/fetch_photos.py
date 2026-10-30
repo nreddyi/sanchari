@@ -45,4 +45,24 @@ for url, key in wanted.items():
         fail += 1; print(f"FAIL {key} {url}")
     time.sleep(0.4)
 with open(MAP, "w") as f: json.dump(mapping, f, indent=1, sort_keys=True); f.write("\n")
+
+# Shrink oversized photos so pages load fast (keeps file names and formats)
+try:
+    from PIL import Image
+    saved = 0
+    for rel in sorted(set(mapping.values())) + [os.path.join("assets/uploads", x) for x in os.listdir(os.path.join(ROOT, "assets/uploads")) if x.lower().endswith((".jpg", ".jpeg", ".png", ".webp"))]:
+        p = os.path.join(ROOT, rel)
+        if not os.path.exists(p): continue
+        limit = 2000 if os.path.basename(p).startswith("hero") else 1400
+        before = os.path.getsize(p)
+        with Image.open(p) as im:
+            if max(im.size) <= limit: continue   # already optimised (avoid re-compressing)
+            fmt = im.format
+            im = im.convert("RGB") if fmt in ("JPEG", "WEBP") and im.mode not in ("RGB", "L") else im
+            im.thumbnail((limit, limit))
+            im.save(p, fmt, quality=80, optimize=True, **({"method": 6} if fmt == "WEBP" else {"progressive": True} if fmt == "JPEG" else {}))
+        saved += before - os.path.getsize(p)
+    print(f"optimised photos, saved {saved//1024} KB")
+except ImportError:
+    print("Pillow not installed; skipped photo optimisation")
 print(f"downloaded {ok}, already had {skip}, failed {fail}")

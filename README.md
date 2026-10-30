@@ -13,3 +13,5 @@ Live site: https://nreddyi.github.io/sanchari/
 - `assets/uploads/` — photos uploaded in the dashboard
 - `src/` — page templates, styles and scripts (`python3 src/build.py <out>`)
 - `.github/workflows/build.yml` — rebuilds the pages after every change
+
+See **BACKEND.md** for connecting forms to a server.

@@ -320,7 +320,7 @@ footer ul a:hover{color:var(--gold-2)}
 .slots::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:2px;background:var(--line)}
 .slots li{position:relative;display:grid;grid-template-columns:110px 1fr;gap:14px;padding:0 0 16px 26px;font-size:14px}
 .slots li::before{content:"";position:absolute;left:0;top:6px;width:12px;height:12px;border-radius:50%;background:#fff;border:2.5px solid var(--gold)}
-.slots time{font-weight:600;color:var(--gold);font-size:13px;padding-top:1px}
+.slots .slot-t{font-weight:600;color:var(--gold);font-size:13px;padding-top:1px}
 .slots div{color:var(--muted)}
 .slots div b{display:block;color:var(--ink);font-weight:600}
 .ie{display:grid;grid-template-columns:1fr 1fr;gap:20px}
